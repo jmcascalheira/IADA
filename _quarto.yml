@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "IADA - Introdução à Análise de Dados em Arqueologia"
+  subtitle: "João Cascalheira"
+  author: ""
+  date: ""
+  chapters:
+    - index.qmd
+    - apresentacao.qmd
+    - IADA.qmd
+    - estrutura.qmd
+    - organizacao.qmd
+    - referencias.qmd
+    - anexos.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
