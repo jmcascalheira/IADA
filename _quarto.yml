@@ -1,11 +1,23 @@
 project:
   type: book
 
+crossref:
+  fig-title: Fig.
+  fig-prefix: Fig.
+  sec-prefix: Ponto
+  tbl-prefix: Tabela
+  tbl-title: Tabela
+
+number-sections: true
+
 book:
-  title: "IADA - Introdução à Análise de Dados em Arqueologia"
+  title: "Introdução à Análise de Dados em Arqueologia"
   subtitle: "João Cascalheira"
   author: ""
   date: ""
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  cover-image: cover.png
   chapters:
     - index.qmd
     - apresentacao.qmd

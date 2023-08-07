@@ -1,9 +1,17 @@
 # Estrutura da unidade curricular
 
+No Anexo 2 apresenta-se a proposta de Ficha de Unidade Curricular de IADA para os próximos anos letivos em que está previsto o funcionamento da disciplina. Nesta secção esclarecem-se algumas das opções tomadas nos campos mais relevantes para a estruturação da unidade curricular, nomeadamente algumas das alterações efetuadas com base na experiência tida nos anos anteriores.
+
 ## Objetivos da aprendizagem
 
 ## Metodologias de ensino e avaliação
 
+A avaliação é distribuida pelos três seguintes elementos: 1) elaboração de exercícios práticos - 50%; 2) Trabalho final - 40%; 3) participação e assiduidade - 10%.
+
+Os exercícios práticos são individuais e feitos ao longo das várias aulas de cariz teórico-prático. Na sua essência, estes exercícios correspondem à aplicação prática de cada um dos principais blocos letivos da unidade curricular. Na maior parte dos casos, este exercícios iniciam-se e terminam-se em contexto de aula, sendo que nalguns casos, em que, por vários motivos, a conclusão dos mesmos não é alcançada em aula, é pedido aos alunos que terminem até à próxima aula, onde serão reservados 30 minutos para revisão das dúvidas e dos resultados finais. O objetivos destes exercícios
+
 ## Conteúdos programáticos
+
+A unidade curricular de IADA tem um total de 30 horas de horas teórico-práticas e 5 horas de orientação tutorial; portanto, 140 horas totais de trabalho, equivalentes a 5 ECTS. Tendo em conta que os horários semanais-tipo estabelecem 3 horas de aulas por semana, as aulas distribuem-se ao longo de 13 semanas do respetivos semestre.
 
 ## Bibliografia

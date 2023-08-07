@@ -1,12 +1,211 @@
 # Organização e conteúdos das aulas
 
-## Aula 01 {.unnumbered}
+## Aula 01 - O registo em Arqueologia: do físico ao digital
 
-## Aula 02 {.unnumbered}
+A primeira aula da unidade curricular é dedicada à importância do registo em Arqueologia. Foca-se sobretudo como a transição para a recolha, processamento, e análise de dados em ambiente totalmente digital agiliza o fluxo de trabalho e permite uma melhor planificação do trabalho arqueológico e reduz o potencial de erros e a perda de informação irrecuperável do registo arqueológico.
 
-## Aula 03 {.unnumbered}
+Embora a opção preferencial para o registo arqueológico seja a sua preservação *in situ*, a maior parte das realidades com que o arqueólogo se depara não permitem esta conservação, sendo muitos dos sítios arqueológicos destruídos, tapados ou transformados depois da intervenção. A escavação de um sítio arqueológico é, desta forma, uma experiência que não se pode voltar a repetir e, portanto, a importância do registo exato de todas as suas particularidades deve ser a principal preocupação do arqueólogo.
 
-## Aula 04 {.unnumbered}
+As abordagens atuais ao processo de registo durante a escavação arqueológica prevêem sobretudo, e de uma forma o mais lógica possível, ligar todos os elementos díspares de um sítio arqueológico no âmbito do registo espacial tridimensional. Naturalmente, a escavação arqueológica não é uma prática precisa, uma vez que existe muito espaço para ambiguidade. O processo de escavar e registar um sítio arqueológico é uma mistura curiosa entre intuição, intrepretação e rigor científico @lock. O resultado desse processo é um arquivo composto por dados escritos, desenhados e fotografados dos objetos escavados, e da sua relação espacial. Esta preservação por registo tem como principal vanatgem o facto de que esse arquivo irá estar acessível para análise, intepretação, e futuras reinterpretações. Coletivamente, esse registo fornece o contexto dos achados feitos, ou seja, os padrões específicos de associação física que os relacionam entre si e com os sedimentos em que foram encontrados [@mitchell2018].
+
+No entanto, para garantir sucesso neste processo é essencial que os dados estejam estruturados e guardados de forma lógica e sem ambiguidades. O uso crescente de computadores, e particularmente de *software* de Sistemas de Bases de Dados tem sido fundamental para o desenvolvimento dos sistemas de registo de escavação nas últimas décadas.
+
+Devido às particularidades dos sítios arqueológicos e as diferentes ideias e objetivos de equipas de investigação e responsáveis da investigação, conhecemos hoje um conjunto muito alargado de sistemas de registo. Ainda assim é possível reconhecer alguns conceitos-chave e requisitos-chave que integram, actualmente, a maior parte dos trabalhos de escavação. Um destes conceitos é, por exemplo, o da [Matriz de Harris](http://harrismatrix.com/) [@harris1997] nomeadamente o da conceptualização do registo de contextos únicos, em que um contexto é qualquer evento natural ou antrópico que pode ser distinguido no registo arqueológico.
+
+As primeiras abordagens ao registo de escavação consistiam em texto descritivo, notas curtas e esquemas anotados nos cadernos de campo, produzindo um tipo de registo que é díficil de armazenar e, principalmente, de analisar de forma objetiva, por ser pouco lógico na sua estrutura e não ter sentido explícito. O início da busca por cumprir com estes dois últimos requisitos foi aquando da introdução das folhas *proforma* de registo de campo. Ainda hoje, em várias escavações, é comum ter vários formulários de registo que representam várias classes diferentes de informação*, e.g.* formulários de contexto, formulários de contextos especiais, formulários individuais de achados, etc.
+
+[![Ficha de sítio da Direção Geral do Património Cultural. Disponível em: \<https://www.patrimoniocultural.gov.pt/static/data/recursos/formularios/fichasitiodgpc_distributed.pdf\>](fichasitiodgpc_actual_Page_1.png){width="512"}](https://www.patrimoniocultural.gov.pt/static/data/recursos/formularios/fichasitiodgpc_distributed.pdf)
+
+Contudo, aspectos como a ilegibilidade, folhas de dados incompletas e erros entre observadores são algumas das inúmeras dificuldades que os arqueólogos enfrentam quando recolhem dados no terreno utilizando abordagens puramente analógicas. Por outro lado, os arqueólogos lamentam muitas vezes as horas passadas a preencher formulários, que consomem tempo precioso que poderiam dedicar a outras tarefas.
+
+Por estas razões, atualmente, muitos destes formulários foram subsitituídos por abordagens totalmente digitais ao trabalho de campo arqueológico. De facto, a completa digitalização de dados está a tornar-se um requisito prático para todo o trabalho de campo e de laboratório [@austin2014; @kintigh2014a; @ogburn2010]. Várias entidades de financiamento e tutelares de Património e Arqueologia, obrigam os profissionais a demonstrarem uma estratégia para o arquivo e divulgação a longo prazo de todos os dados criados durante a investigação. Em Portugal, por exemplo, a Direção Geral do Património Cultural (DGPC) exige a submissão dos dados recolhidos em todo os trabalhos de campo em suporte físico e digital, para efeitos de preservação dos dados a longo prazo.
+
+A digitalização é frequentemente vista como proporcionadora de uma maior flexibilidade através da sua separação entre função e forma, entre conteúdo e meio, na forma como pode quebrar as fronteiras entre os dados, encoraja e apoia uma utilização dinâmica e colaborativa e proporciona mais oportunidades para a recombinação de dados e a criação de novos conjuntos de dados. @kaufmann2017 sugerem uma série de possibilidades digitais, muitas das quais diretamente relacionadas com a nossa utilização e relação com os dados. Estas incluem a maleabilidade e flexibilidade dos dispositivos digitais, as suas capacidades de armazenamento, a sua capacidade de pesquisa, a sua conetividade, a sua computabilidade, a sua natureza interactiva e a sua criação e organização de dados. A combinação de todos estes factores, e não só, cria um ambiente indiscutivelmente atrativo para a produção, manipulação, consumo e criação de conhecimento a partir dos dados.
+
+No trabalho arqueológico, outra das inevitabilidades para a recolha e gestão de dados de forma totalmente digital relaciona-se com os próprios instrumentos de medição que se utilizam atualmente no ca mpo e em laboratório. A adoção generalizada da Estação Total em trabalhos de escavação e prospeção @bernatchez2011; @mcpherron2002, por exemplo, teve como consequência o armazenamento totalmente digital dos dados espaciais, seja na memória interna do equipamento, seja em computadores conectados por cabo ou por *bluetooth* ao equipamento topográfico (muitas vezes dando lugar ao desenvolvimento de *software* próprio para estabelecer essa ligação e cumprir com necessidades muito específicas em Arqueologia - ver, por exemplo, as soluções disponibilizadas em [www.oldstoneage.com](https://www.oldstoneage.com/osa/tech/index/)). Em laboratório, por outro lado, quase todos os equipamentos utilizados para leitura, registo e análise de materiais arqueológicos são, hoje em dia, completamente digitais. Até mesmo um instrumento amplamente usado para obter medições lineares de objetos - o paquímetro - tem, há vários anos, versões digitais que permitem a sua conexão a um computador, e através de um simples pressionar de botão as medidas são enviadas de forma imediata para o campo da base de dados utilizada.
+
+## Aula 02 - Dados e Bases de dados {#sec-basesdedados}
+
+::: callout-note
+Nesta aula são apresentados os principios básicos de uma base de dados, os tipos de bases de dados mais utilizadas, bem como os tipos de variáveis e escalas de medida. O objetivo é, para além da familiarização com os vários conceitos, demonstrar quão importantes são as decisões tomadas antes do ínicio da recolha de dados, e como essas decisões vão influenciar os tipos de análises que poderão ser posteriormente feitas.
+:::
+
+### Tipos de bases de dados
+
+Uma base de dados é um simples repositório de informação relacionado com determinado assunto ou finalidade, ou seja, é uma coleção de dados ou itens de informação estruturados de determinada maneira, que permite a sua consulta, atualização, e outros tipos de operações processadas por meios informáticos. Serve para gerir vastos conjuntos de informação de modo a facilitar a organização, manutenção e pesquisa de dados. Existem vários tipos de bases de dados digitais, incluindo bases de dados relacionais, NoSQL, orientadas a objetos, multimodais, espaciais, etc. Em Arqueologia, são sobretudo utilizados três tipos principais de bases de dados: folhas de cálculo, bases de dados relacionais, e bases de dados espaciais.
+
+#### Folhas de cálculo
+
+Uma folha de cálculo é um tipo de ficheiro de armazenamento de dados no qual os dados são armazenados numa estrutura semelhante a uma tabela. É, em certo sentido, muito semelhante ao sistema de quadrícula arqueológica utilizada para identificar unidades de escavação, com linhas horizontais (normalmente identificadas com números) e colunas verticais (normalmente identificadas com letras) @mcpherron2003. A intersecção de uma linha específica com uma coluna específica é denominada de célula. Numa folha de cálculo utilizada como base de dados, cada linha representa um registo, cada coluna representa um campo e cada célula contém valores.
+
+Em Arqueologia, as folhas de cálculo são amplamente utilizadas para recolha e análise de dados. A principal vantagem é a sua simplicidade e o facto de poderem ser lidas pela maior parte dos software mais utilizados para análises quantitativas de dados (como MS Excel, Google Sheets, R, Python, SPSS, entre outros), sistemas de gestão de bases de dados e linguagens de programação. Muitas ferramentas de manipulação de dados e bibliotecas de programação oferecem suporte integrado para a leitura e escrita destes ficheiros tornando-os uma escolha popular para o intercâmbio de dados em vários domínios.
+
+Os formatos mais comuns e os mais aconselháveis para este tipo de base de dados são os CSV (comma-separated values) e TXT (ficheiro de texto simples). Ao contrário de outros formatos, este são completamente abertos e, por essa razão são facilmente partilhados entre utilizadores que usem diferentes programas ou sistemas operativos, e tendo em conta que não precisam de *software* específico podem ser abertos e modificados até mesmo com um simples editor de texto.
+
+Contudo, à medida que os requisitos de armazenamento de dados crescem em tamanho e complexidade, as folhas de cálculo podem tornar-se menos eficientes e escaláveis em comparação com bases de dados relacionais, que oferecem capacidades mais avançadas de consulta, indexação, e gestão de dados.
+
+![Exemplo de folha de cálculo do Google Sheets com dados provenientes da análise de ferramentas em pedra do sítio arqueológico de Vale Boi. Cada linha representa um artefacto, e cada coluna uma das variáveis analisadas. Os dados presentes nas células representam os valores para cada uma das variáveis ou campos.](folha_de_calculo.png)
+
+#### Bases de dados relacionais
+
+As bases de dados relacionais são construídas com base nos princípios do modelo relacional, que define os dados como conjuntos de tabelas. De uma forma simplista, uma base de dados relacional agrega várias folhas de cálculo ou ficheiros planos, que contém informação distinta sobre o mesmo conjunto de dados.
+
+A estrutura de uma base de dados relacional baseia-se no conceito de chaves ou idenficadores únicos (em inglês *Globally Unique Identifier,* ou GUID), que desempenham um papel vital na manutenção da integridade dos dados e no estabelecimento de relações entre tabelas. A seleção de uma chave primária é essencial, pois influencia o desempenho e a eficiência das consultas e junções na base de dados. Eis algumas das principais características das chaves primárias:
+
+[Unicidade]{.underline}: Cada valor na coluna da chave primária deve ser único. Isto garante que não há dois registos na tabela com o mesmo identificador.
+
+[Não-nulidade]{.underline}: Uma chave primária não pode conter valores NULL. Cada registo na tabela tem de ter um valor de chave primária válido e não nulo.
+
+[Imutabilidade]{.underline}: Idealmente, os valores da chave primária não devem mudar depois de serem atribuídos a um registo. Isto assegura a consistência e evita potenciais problemas com a referenciação de dados.
+
+[Coluna única ou chave composta]{.underline}: Uma chave primária pode ser composta por uma única coluna ou por uma combinação de várias colunas. Neste último caso, é designada por chave composta.
+
+Um dos exemplos práticos de uma base de dados relacional é a utilizada pelo software Newplot, um programa open source desenvolvido para gerir dados provenientes de trabalhos de escavação arqueológica. O Newplot funciona sobre uma base de dados relacional em MS Access. Esta é composta por várias tabelas, das quais as mais importantes são as *Context* e *XYZ*. A primeira contém informação sobre um determinado artefacto ou conjunto de artefactos e o contexto em que estes foram encontrados (e.g., unidade estratigráfica, tipo de material). A segunda contém informação espacial da proveniência desses artefactos, nomeadamente as coordenadas tridimensionais x, y, e z. As duas tabelas encontram-se relacionadas através de uma chave primária composta, representada pelas variáveis *UNIT* e *ID*, que correspondem, respetivamente, ao quadrado, área de escavação ou sítio arqueológico (e.g., A1, L15, Abrigo, Vale Boi), e a um número sequencial de identificação. No seu conjunto, a combinação de *UNIT* e *ID* tem de ser única. Por exemplo, em toda a base de dados, apenas um objeto pode ter como chave primária "A1-100" para que se possa relacionar as suas coordenadas na tabela *XYZ* com a respetiva informação contextual na tabela *Context*. Nalguns casos, contudo, é necessário registar várias coordenadas tridimensionais para um único objeto, que permitam recolher informação relativa à sua orientação ou ao seu tamanho e forma geral. Note-se, no entanto, que com esta abordagem estaremos a criar mais do que um registo na tabela da base de dados para cada objeto registado. A base de dados associada ao program Newplot está preparada para que um objeto tenha várias entradas na tabela *XYZ,* utilizando o mesmo conjunto de UNIT-ID mas adicionando uma outra variável, denominada *SUFFIX*. Neste caso, a relação entre as tabelas *Context* e *XYZ* é denominada de um-para-múltiplos (1:M), em que várias entradas em *XYZ* correspondem apenas a uma entrada de *Context*.
+
+#### Bases de dados espaciais
+
+As bases de dados espaciais são um tipo especializado de bases de dados concebido para armazenar, gerir e processar dados espaciais ou geográficos. Desempenham um papel vital em várias aplicações que envolvem informações baseadas na localização, como os Sistemas de Informação Geográfica (SIG), a monitorização ambiental, o planeamento urbano, a logística, serviços baseados na localização, ou em Arqueologia. Estas bases de dados estão equipadas com técnicas de indexação espacial e capacidades de consulta espacial que permitem a recuperação e análise eficientes de dados espaciais. Permitem a representação de objectos geométricos simples, como pontos, linhas e polígonos, e, em alguns casos, permitem tratar de estruturas mais complexas, como objectos 3D, e redes irregulares trianguladas (em inglês Triangulated Irregular Network - TIN).
+
+Quase todo o trabalho de campo arqueológico produz grandes quantidades de informação baseada na localização, seja de sítios arqueológicos, ou de objetos dentro de um sítio arqueológico. A proveniência de cada fóssil, artefacto e amostra é fundamental para compreender a sua idade, tafonomia, contexto ecológico, contexto cultural e significado comportamental. Desta forma, a proveniência espacial de um item é muitas vezes tão importante como o próprio item, sendo a utilização de bases de dados espaciais em Arqueologia particularmente útil. Principalmente quando estão incluídos dados geográficos com coordenadas absolutas relativas a um datum e sistema de projeção específicos.
+
+Um dos exemplos do uso de uma base de dados espacial para consulta online do inventário de sítios arqueológicos de Portugal Continental, é a do [Geoportal da Direção Geral do Património Cultural](https://patrimoniodgpc.maps.arcgis.com/apps/webappviewer/index.html?id=5cb4735d7d7743a39a16d7269a753a4a). Esta está baseada no formato Geodatabase da ESRI. Este é um formato proprietário utilizado pelo conjunto de software ArcGIS da ESRI. Fornece um modelo de dados espaciais abrangente com vários tipos de dados, incluindo pontos, linhas, polígonos e dados raster.
+
+Outro dos exemplos disponíveis para consulta é o do projeto [Paleo Core](#0), uma plataforma online para gestão de dados arqueológicos, paleontológicos, e geológicos, com particular ênfase nos períodos Pliocénico e Pleistocénico. Toda a base de dados deste projeto é suportado por programas de acesso aberto, incluindo a extensão PostGIS do popular sistema de bases de dados relacionais PostgreSQL. O PostGIS adiciona suporte para gerir e analisar de dados espaciais, transformando o PostgreSQL num banco de dados espacial completo, com tipos específicos de dados espaciais, índices espaciais e funções espaciais.
+
+### Tipos de dados
+
+Todos os formatos de bases de dados aceitam a definição de vários tipos de dados, que devemos escolher de acordo com a informação que será colocada dentro desse campo. Destes tipos de dados devemos escolher aqueles que melhor se adaptem à informação que queremos armazenar. O tipo de dados utilizado determina a natureza dos dados que podem ser armazenados, o intervalo de valores que pode assumir e as operações que podem ser efectuadas sobre ele. Por vezes, são confundidos os tipos de daods possíveis de escolher numa base de dados com os tipos de variáveis estatísticas. Apesar de relacionados, no caso das bases de dados são tidas em consideração sobretudo as operações de armazenamento e manipulação e por isso existem mais tipos que no caso das variáveis estatísticas. Em baixo são apresentados os principais exemplos dos tipos de dados.
+
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Tipo de dados                              | Descrição                                                                                                                                                                                                 |
++============================================+===========================================================================================================================================================================================================+
+| **Texto**                                  | Valores curtos e alfanuméricos, tais como um apelido ou um endereço                                                                                                                                       |
+|                                            |                                                                                                                                                                                                           |
+| **Texto Breve**                            |                                                                                                                                                                                                           |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Número, Número Grande**                  | Valores numéricos, tais como distâncias.                                                                                                                                                                  |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Percentagem**                            | Percentagens.                                                                                                                                                                                             |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Científico**                             | Aceita numeração científica.                                                                                                                                                                              |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Moeda**                                  | Valores monetários.                                                                                                                                                                                       |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Sim/Não**                                | Também conhecido como lógico ou boleano. Os valores Sim e Não e os campos que contêm apenas um de dois valores.                                                                                           |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Data/Hora**                              | Data/Hora: valores de data e hora dos anos 100 a 9999.                                                                                                                                                    |
+|                                            |                                                                                                                                                                                                           |
+| **Data/Hora Prolongada**                   | Data/Hora Prolongada: os valores de data e hora dos anos 1 a 9999.                                                                                                                                        |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Rich Text**                              | Texto ou combinações de texto e números que podem ser formatados ao utilizar controlos de cor e de tipo de letra.                                                                                         |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Campo Calculado**                        | Resultados de um cálculo. O cálculo tem de fazer referência a outros campos da mesma tabela.                                                                                                              |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Anexo**                                  | Imagens, ficheiros de folha de cálculo, documentos, gráficos e outros tipos de ficheiros suportados anexados aos registos na base de dados, semelhante à forma de anexar ficheiros a mensagens de e-mail. |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Hiperligação**                           | Texto ou combinações de texto e números armazenados como texto e utilizados como um endereço de hiperligação.                                                                                             |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Memo**                                   | Longos blocos de texto. Uma utilização típica de um campo Memo seria uma descrição detalhada do produto.                                                                                                  |
+|                                            |                                                                                                                                                                                                           |
+| **Texto Longo**                            |                                                                                                                                                                                                           |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Pesquisa**                               | Lista de valores que é obtida a partir de uma tabela ou consulta ou apresenta um conjunto de valores que especificou quando criou o campo.                                                                |
++--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: Principais tipos de dados que definem os valores que uma coluna de uma base de dados pode conter.
+
+## Aula 03 - Recolha de dados {.unnumbered}
+
+Em geral, por vários motivos, na prática arqueológica os principais objectivos são recolher o máximo de dados necessários, o mais rapidamente possível, com o mínimo de erros possível. Nesta aula são apresentadas e postas em prática técnicas para atingir estes objectivos, nomeadamente no que diz respeito ao trabalho de laboratório e à recolha de dados a partir de artefactos arqueológicos. Algumas desta técnicas envolvem hardware especializado. Outras, tais como a criação de menus e ficheiros de ajuda que contêm listas de respostas correctas ou válidas para as variáveis selecionadas, envolvem software que pode ser aplicado à maioria dos programas de gestão de bases de dados.
+
+Decidir que variáveis incluir em determinada base de dados para análise de materiais arqueológicos é o primeiro passo a dar antes de iniciar a análise em si. Contudo, a escolha dessas variáveis vai depender muito do objetivo do estudo e do tipo de objetos em análise e, portanto, não nos preocuparemos com esse passo. Preocumano-nos sim, em perceber como é que vamos traduzir essas observações num conjunto de variáveis numa base de dados que (1) guarde a informação de forma eficiente, (2) torne a recuperação e análise do dados simples, (3) integre facilmente com as outras análises que eventualmente irão ser feitas no contexto do projeto arqueológico em causa.
+
+Neste contexto, uma das primeiras preocupações será a da organização e decisão da unidade de análise. Frequentemente, cada objeto é definido como a unidade de análise, e os campos da base de dados representam as várias observações que são feitas individualmente. Num exemplo muito simples, no âmbito da análise de artefactos líticos, cada peça é considerada uma unidade de análise, registando-se variáveis como o Comprimento, a Largura, a Espessura, o Tipo de Talão, etc., para cada um dos artefactos, individualmente. Nestes casos, a introdução dos dados não apresenta grandes desafios, tendo em conta que se pode fazer a análise utilizando um único ficheiro plano ou folha de cálculo.
+
+Noutros casos, como por exemplo na análise de marcas de corte em ossos de animais, a situação é muito mais desafiante. A principal razão é porque se passa a ter duas unidades principais de análise: o osso em si (do que se podem tirar medidas, identificar a espécie, etc.), e cada uma das marcas de corte identificadas (que podem ser individualmente caracterizadas segundo as suas dimensões, perfil, etc.). Uma abordagem possível é adicionar um conjunto de variáveis para cada marca de corte na base de dados, mas isto levanta dois problemas: por um lado, nem todos os ossos terão marcas de corte e isso implica que existirão muitas células em branco; por outro lado, é impossível adivinhas o número de marcas de corte antes de se começar a análise e isso implicaria adicionar novas variáveis durante o estudo, o que deve ser sempre evitado.
+
+Assim, nestes casos a melhor estratégia será sempre separar a análise em pelo menos duas tabelas distintas, de acordo com as duas unidades de análise definidas -uma para os ossos, outra para as marcas de corte. Naturalmente, estas duas tabelas deverão estar sempre relacionadas através de um identificador único (i.e., uma chave primária) que permite ligar os dois registos.
+
+#### Identificadores únicos
+
+#### Objetos vs agregados
+
+#### Nomeação de variáveis
+
+#### E5
+
+## Aula 04 - Introdução ao R e Manipulação Básica de Dados {.unnumbered}
+
+#### Começar a utilizar o R
+
+O R é uma poderosa linguagem de programação amplamente utilizada para computação estatística e análise de dados em vários domínios científicos, incluindo a Arqueologia. De facto, na última década, a linguagem R é a que mais tem sido utilizada, salientando alguns autores que a sua crescente adopção tem provocado uma verdadeira revolução na disciplina @schmidt2020. Algumas das principais razões pelas quais o R é utilizado em arqueologia:
+
+-   [Análise e visualização de dados]{.underline}: Os arqueólogos lidam frequentemente com grandes conjuntos de dados provenientes de escavações ou trabalho laboratorial. O R fornece inúmeros pacotes para manipulação, análise e visualização de dados, facilitando a exploração e interpretação de dados arqueológicos. Desde estatísticas sumárias simples a métodos estatísticos avançados, o R pode lidar com uma vasta gama de tarefas analíticas.
+
+-   [Ferramentas estatísticas]{.underline}: O R oferece um conjunto abrangente de ferramentas estatísticas que são essenciais, nomeadamente uma grande variedade de modelos de regressão, testes de hipóteses, análises multivariadas e estatísticas espaciais.
+
+-   [SIG e análise espacial:]{.underline} Os Sistemas de Informação Geográfica (SIG) desempenham um papel crucial na Arqueologia, uma vez que a distribuição espacial de sítios e elementos arqueológicos é frequentemente significativa. O R tem pacotes como 'sp,' 'raster,' e 'sf' que permitem efetuar análises espaciais sofisticadas, criar mapas e sobrepor dados arqueológicos em camadas geográficas.
+
+-   [Reprodutibilidade e documentação]{.underline}: O R promove um fluxo de trabalho transparente e reproduzível, o que é crucial para a investigação científica, incluindo a Arqueologia. Ao utilizar scripts R, podem-se documentar as análises passo a passo, facilitando a compreensão e a reprodução dos resultados por outras pessoas.
+
+-   [Integração com outras ferramentas]{.underline}: O R pode ser facilmente integrado noutras linguagens e ferramentas de programação, permitindo utilizar *software* e bibliotecas especializadas para tarefas específicas. Por exemplo, o R pode interagir com programas como o QGIS, GRASS GIS e bases de dados como o PostgreSQL, melhorando as capacidades de gestão e análise de dados.
+
+-   [Comunidade e recursos]{.underline}: O R tem uma comunidade de utilizadores grande e ativa. Esta comunidade cria e mantém numerosos pacotes adaptados a necessidades arqueológicas específicas. A disponibilidade destes pacotes expande consideravelmente a gama de análises que podem ser efectuadas com o R.
+
+-   [Flexibilidade e personalização]{.underline}: O R é uma linguagem de código aberto, o que significa que se podem personalizar e alargar as funcionalidades para se adequarem às suas necessidades específicas de investigação. Podem-se criar funções, pacotes e visualizações, tornando o R uma ferramenta flexível e adaptável para necessidades diversas.
+
+-   [Económica]{.underline}: O R é um software gratuito e de código aberto, tornando-o acessível a todos. Elimina a necessidade de adquirir licenças dispendiosas de software estatístico, tornando-o uma opção atractiva para investigadores e instituições académicas.
+
+##### R Instalação e configuração
+
+O R pode ser descarregado a partir do [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Depois de instalar o R, deve instalar o [RStudio](https://posit.co/products/open-source/rstudio/), um ambiente de desenvolvimento integrado que fornece uma interface de fácil utilização para trabalhar com o R. O RStudio oferece funcionalidades como realce de sintaxe, conclusão de código e visualização de gráficos, tornando a experiência de programação mais fácil. Depois de instalados os dois programas apenas é necessário abrir o RStudio, uma vez que o R será automaticamente iniciado.
+
+#### Noções básicas de R e estruturas de dados
+
+##### A interface do RStudio
+
+O RStudio é um ambiente de desenvolvimento integrado (IDE na sigla inglesa) concebido especificamente para a linguagem de programação R. Fornece uma interface de fácil utilização que simplifica o processo de escrita, execução e gestão de código R. A interface está dividida em vários componentes-chave, cada um servindo um objetivo único para aumentar a produtividade do utilizador.
+
+-   *Source*: Este painel é onde se escreve/visualiza os scripts R (identificados com a extensão .R). Alguns resultados (tais como visualizar um conjunto de dados utilizando *View()*) aparecerão como um separador aqui.
+
+-   *Console/Terminal/Jobs*: É aqui que se vê a execução dos comandos. É o mesmo ecrã que se veria se estivessemos a utilizar o R na linha de comandos sem o RStudio. Pode-se trabalhar interactivamente (ou seja, introduzir comandos R aqui), mas na maior parte das vezes executa-se um *script* (ou linhas num *script*) no painel *Source* e vê-se a sua execução e resultados aqui. O separador *Terminal* dá acesso ao terminal BASH (o sistema operativo Linux, não relacionado com o R).
+
+-   *Environment/History*: Aqui, o RStudio mostra quais os conjuntos de dados e objectos que criou e quais estão definidos na memória. Também pode ver algumas propriedades de objectos/conjuntos de dados, como o seu tipo e dimensões. O separador *History* contém um histórico dos comandos R executados durante a sessão.
+
+-   *Files/Plots/Packages/Help/Viewer*: Este painel polivalente mostra-lhe o conteúdo dos directórios no seu computador. Também pode usar o separador *Files* para navegar e definir o diretório de trabalho. O separador *Plots* mostra a saída de quaisquer gráficos gerados. Em *Packages* verá os pacotes que estão ativamente carregados ou pode anexar pacotes instalados. "Help" mostra os ficheiros de ajuda para as funções e pacotes do R. O separador *Viewer* permite-lhe ver o conteúdo local da Web (por exemplo, resultados HTML).
+
+![A interface do RStudio com a indentificação das principais componentes.](rstudio_layout.png)
+
+#### O R como calculadora
+
+O R pode ser utilizado como uma calculadora simples para operações aritméticas básicas. Pode-se efetuar cálculos como adição, subtração, multiplicação e divisão diretamente na *Console* do R.
+
+```{r}
+# Adição
+5 + 3
+
+
+# Subtração
+10 - 2
+
+# Multiplicação
+4 * 6
+
+# Divisão
+16 / 4
+```
+
+##### Estruturas de dados em R
+
+Compreender as estruturas de dados em R é essencial, pois determina como os dados são armazenados e manipulados. As principais estruturas de dados incluem:
+
+-   *Vectors*: Uma estrutura de dados básica em R, que pode conter elementos do mesmo tipo de dados, como valores numéricos, de caracteres ou lógicos.
+
+-   *Matrices*: Uma matriz bidimensional com linhas e colunas, contendo elementos do mesmo tipo de dados.
+
+-   *Arrays*: Generalização multidimensional de vectores e matrizes.
+
+-   *Dataframes*: Uma estrutura bidimensional semelhante a uma tabela em que as colunas podem ser de diferentes tipos de dados. As estruturas de dados são amplamente utilizadas no tratamento e análise de dados do mundo real.
 
 ## Aula 05 {.unnumbered}
 
