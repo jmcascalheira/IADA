@@ -1,0 +1,83 @@
+## Manipulação básica de dados em R {.unnumbered}
+
+### Introdução
+
+O R é uma poderosa linguagem de programação, amplamente utilizada para computação estatística e análise de dados em vários domínios científicos, incluindo a Arqueologia. De facto, na última década, a linguagem R é a que mais tem sido utilizada, salientando alguns autores que a sua crescente adopção tem provocado uma verdadeira revolução na disciplina [@schmidt2020]. Algumas das principais razões pelas quais o R é utilizado em Arqueologia são:
+
+-   [Análise e visualização de dados]{.underline}: Os arqueólogos lidam frequentemente com grandes conjuntos de dados provenientes de escavações ou trabalho laboratorial. O R fornece inúmeros pacotes para manipulação, análise e visualização de dados, facilitando a exploração e interpretação de dados arqueológicos. Desde estatísticas sumárias simples a métodos estatísticos avançados, o R pode lidar com uma vasta gama de tarefas analíticas.
+
+-   [Ferramentas estatísticas]{.underline}: O R oferece um conjunto abrangente de ferramentas estatísticas que são essenciais, nomeadamente uma grande variedade de modelos de regressão, testes de hipóteses, análises multivariadas e estatísticas espaciais.
+
+-   [SIG e análise espacial:]{.underline} Os Sistemas de Informação Geográfica (SIG) desempenham um papel crucial na Arqueologia, uma vez que as análises da distribuição espacial de sítios e elementos arqueológicos é muito frequente. O R tem pacotes como *sp* [@sp-2]*,* *raster* [@raster], ou *sf* [@sf] que permitem efectuar análises espaciais sofisticadas, criar mapas e sobrepor dados arqueológicos em camadas geográficas.
+
+-   [Reprodutibilidade e documentação]{.underline}: O R promove um fluxo de trabalho transparente e reproduzível, o que é crucial para a investigação científica, incluindo a Arqueologia. Ao utilizar *scripts* R, podem-se documentar as análises passo a passo, facilitando a compreensão e a reprodução dos resultados por outras pessoas.
+
+-   [Integração com outras ferramentas]{.underline}: O R pode ser facilmente integrado noutras linguagens e ferramentas de programação, permitindo utilizar software e bibliotecas especializadas para tarefas específicas. Por exemplo, o R pode interagir com programas como o QGIS, GRASS GIS e bases de dados como o PostgreSQL, melhorando as capacidades de gestão e análise de dados.
+
+-   [Comunidade e recursos]{.underline}: O R tem uma comunidade de utilizadores grande e activa. Esta comunidade cria e mantém numerosos pacotes adaptados a necessidades arqueológicas específicas. A disponibilidade destes pacotes expande consideravelmente a gama de análises que podem ser efectuadas com o R.
+
+-   [Flexibilidade e personalização]{.underline}: O R é uma linguagem de código aberto, o que significa que se podem personalizar e alargar as funcionalidades para se adequarem às suas necessidades específicas de investigação. Podem-se criar funções, pacotes e visualizações, tornando o R uma ferramenta flexível e adaptável para necessidades diversas.
+
+-   [Económica]{.underline}: O R é um software gratuito e de código aberto, tornando-o acessível a todos. Elimina a necessidade de adquirir licenças dispendiosas de software estatístico, tornando-o uma opção atractiva para investigadores e instituições académicas.
+
+#### Instalação e configuração
+
+O R pode ser descarregado a partir do [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Depois de instalar o R, devemos instalar o [RStudio](https://posit.co/products/open-source/rstudio/), um ambiente de desenvolvimento integrado (ou IDE) que fornece uma interface de fácil utilização para trabalhar com o R. O RStudio oferece funcionalidades como realce de sintaxe, conclusão de código e visualização de gráficos, tornando a experiência de programação mais fácil. Depois de instalados os dois programas apenas é necessário abrir o RStudio, uma vez que o R será automaticamente iniciado.
+
+#### Noções básicas de R e estruturas de dados
+
+##### A interface do RStudio
+
+O RStudio é um ambiente de desenvolvimento integrado concebido especificamente para a linguagem de programação R. Fornece uma interface de fácil utilização que simplifica o processo de escrita, execução e gestão de código R. A interface está dividida em vários componentes-chave, cada um servindo um objectivo único para aumentar a produtividade do utilizador.
+
+-   *Source*: Este painel é onde se escreve/visualiza os scripts R (identificados com a extensão .R). Alguns resultados (tais como visualizar um conjunto de dados utilizando *View()* aparecerão como um separador aqui.
+
+-   *Console/Terminal/Jobs*: É aqui que se vê a execução dos comandos. É o mesmo ecrã que se veria se estivéssemos a utilizar o R na linha de comandos sem o RStudio. Pode-se trabalhar interactivamente (ou seja, introduzir comandos R aqui), mas na maior parte das vezes executa-se um *script* (ou linhas num *script*) no painel *Source* e vê-se a sua execução e resultados aqui. O separador *Terminal* dá acesso ao terminal BASH (o sistema operativo Linux, não relacionado com o R).
+
+-   *Environment/History*: Aqui, o RStudio mostra quais os conjuntos de dados e objectos que criou e quais estão definidos na memória. Também pode ver algumas propriedades de objectos/conjuntos de dados, como o seu tipo e dimensões. O separador *History* contém um histórico dos comandos R executados durante a sessão.
+
+-   *Files/Plots/Packages/Help/Viewer*: Este painel polivalente mostra-lhe o conteúdo dos directórios no seu computador. Também pode usar o separador *Files* para navegar e definir o diretório de trabalho. O separador *Plots* mostra a saída de quaisquer gráficos gerados. Em *Packages* verá os pacotes que estão ativamente carregados ou pode anexar pacotes instalados. "Help" mostra os ficheiros de ajuda para as funções e pacotes do R. O separador *Viewer* permite-lhe ver o conteúdo local da Web (por exemplo, resultados HTML).
+
+![A interface do RStudio com a indentificação das principais componentes.](images/rstudio_layout.png){alt="A interface do RStudio com a indentificação das principais componentes."}
+
+##### O R como calculadora
+
+Tal como no caso das folhas de cálculo, o R pode ser utilizado como uma calculadora simples para operações aritméticas básicas. Pode-se efetuar cálculos como adição, subtração, multiplicação e divisão diretamente na *Console* do R.
+
+```{r}
+# Adição
+5 + 3
+
+# Subtração
+10 - 2
+
+# Multiplicação
+4 * 6
+
+# Divisão
+16 / 4
+```
+
+##### Estruturas de dados em R
+
+Uma estrutura de dados é uma forma específica de organizar os dados num computador para que possam ser utilizados de forma eficaz. A ideia é reduzir as complexidades de espaço e tempo de diferentes tarefas. Compreender as estruturas de dados em R é essencial, pois determina como os dados são armazenados e manipulados.
+
+As estruturas de dados de base do R são frequentemente organizadas pela sua dimensionalidade (1D, 2D ou nD) e pelo facto de serem homogéneas (todos os elementos devem ser do mesmo tipo) ou heterogéneas (os elementos são frequentemente de vários tipos). Isto dá origem aos seis tipos de dados que são mais frequentemente utilizados na análise de dados:
+
+*Vectors*: Um vetor é uma coleção ordenada de tipos de dados básicos com um determinado comprimento. A única coisa importante é que todos os elementos de um vetor devem ser do mesmo tipo de dados. Os vectores são estruturas de dados unidimensionais.
+
+```{r}
+
+# Vectores (coleção ordenada do mesmo tipo de dados)
+X = c(1, 3, 5, 7, 8)
+ 
+# Mostrar o vector na consola
+print(X)
+
+```
+
+-   *Matrices*: Uma matriz bidimensional com linhas e colunas, contendo elementos do mesmo tipo de dados.
+
+-   *Arrays*: Generalização multidimensional de vectores e matrizes.
+
+-   *Dataframes*: Uma estrutura bidimensional semelhante a uma tabela em que as colunas podem ser de diferentes tipos de dados. As estruturas de dados são amplamente utilizadas no tratamento e análise de dados do mundo real.

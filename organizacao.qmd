@@ -44,7 +44,7 @@ Os formatos mais comuns e os mais aconselháveis para este tipo de base de dados
 
 Contudo, à medida que os requisitos de armazenamento de dados crescem em tamanho e complexidade, as folhas de cálculo podem tornar-se menos eficientes e escaláveis em comparação com bases de dados relacionais, que oferecem capacidades mais avançadas de consulta, indexação, e gestão de dados.
 
-![Exemplo de folha de cálculo do Google Sheets com dados provenientes da análise de ferramentas em pedra do sítio arqueológico de Vale Boi. Cada linha representa um artefacto, e cada coluna uma das variáveis analisadas. Os dados presentes nas células representam os valores para cada uma das variáveis ou campos.](images/Screenshot 2023-08-08 at 15.45.29.png)
+![Exemplo de folha de cálculo do Google Sheets com dados provenientes da análise de ferramentas em pedra do sítio arqueológico de Vale Boi. Cada linha representa um artefacto, e cada coluna uma das variáveis analisadas. Os dados presentes nas células representam os valores para cada uma das variáveis ou campos.](images/Screenshot%202023-08-08%20at%2015.45.29.png)
 
 #### Bases de dados relacionais
 
@@ -116,29 +116,27 @@ Todos os formatos de bases de dados aceitam a definição de vários tipos de da
 
 ## Aula 03 - Recolha de dados {.unnumbered}
 
-Em geral, por vários motivos, na prática arqueológica os principais objectivos são recolher o máximo de dados necessários, o mais rapidamente possível, com o mínimo de erros possível. Nesta aula são apresentadas e postas em prática técnicas para atingir estes objectivos, nomeadamente no que diz respeito ao trabalho de laboratório e à recolha de dados a partir de artefactos arqueológicos. Algumas desta técnicas envolvem hardware especializado. Outras, tais como a criação de menus e ficheiros de ajuda que contêm listas de respostas correctas ou válidas para as variáveis selecionadas, envolvem software que pode ser aplicado à maioria dos programas de gestão de bases de dados.
+Em geral, por vários motivos, na prática arqueológica os principais objectivos são recolher o máximo de dados necessários, o mais rapidamente possível, com o mínimo de erros possível. Nesta aula são apresentadas e postas em prática técnicas para atingir estes objectivos, nomeadamente no que diz respeito ao trabalho de laboratório e à recolha de dados a partir de artefactos arqueológicos. Algumas desta técnicas envolvem hardware especializado. Outras, tais como a criação de menus e ficheiros de ajuda que contêm listas de respostas correctas ou válidas para as variáveis seleccionadas, envolvem software que pode ser aplicado à maioria dos programas de gestão de bases de dados.
 
-Decidir que variáveis incluir em determinada base de dados para análise de materiais arqueológicos é o primeiro passo a dar antes de iniciar a análise em si. Contudo, a escolha dessas variáveis vai depender muito do objetivo do estudo e do tipo de objetos a analisar. Mais generalizada, contudo, é a preocupação em perceber como se traduzem essas observações num conjunto de variáveis numa base de dados que (1) guarde a informação de forma eficiente, (2) torne a recuperação e análise do dados simples, (3) integre facilmente com as outras análises que eventualmente irão ser feitas no contexto do projeto arqueológico em causa.
+Decidir que variáveis incluir em determinada base de dados para análise de materiais arqueológicos é o primeiro passo a dar antes de iniciar a análise em si. Contudo, a escolha dessas variáveis vai depender muito do objectivo do estudo e do tipo de objectos a analisar. Mais generalizada, contudo, é a preocupação em perceber como se traduzem essas observações num conjunto de variáveis numa base de dados que (1) guarde a informação de forma eficiente, (2) torne a recuperação e análise do dados simples, (3) integre facilmente com as outras análises que eventualmente irão ser feitas no contexto do projecto arqueológico em causa.
 
-Neste contexto, uma das primeiras preocupações será a da organização e decisão da unidade de análise. Frequentemente, cada objeto é definido como a unidade de análise, e os campos da base de dados representam as várias observações que são feitas individualmente. Num exemplo muito simples, no âmbito da análise de artefactos líticos, cada peça é considerada uma unidade de análise, registando-se variáveis como o Comprimento, a Largura, a Espessura, o Tipo de Talão, etc., para cada um dos artefactos. Nestes casos, a introdução dos dados não apresenta grandes desafios, tendo em conta que se pode fazer a análise utilizando um único ficheiro plano ou folha de cálculo.
+Neste contexto, uma das primeiras preocupações será a da organização e decisão da unidade de análise. Frequentemente, cada objecto é definido como a unidade de análise, e os campos da base de dados representam as várias observações que são feitas individualmente. Num exemplo muito simples, no âmbito da análise de artefactos líticos, cada peça é considerada uma unidade de análise, registando-se variáveis como o Comprimento, a Largura, a Espessura, o Tipo de Talão, etc., para cada um dos artefactos. Nestes casos, a introdução dos dados não apresenta grandes desafios, tendo em conta que se pode fazer a análise utilizando um único ficheiro plano ou folha de cálculo.
 
-Noutros casos, como por exemplo na análise de marcas de corte em ossos de animais, a situação é muito mais desafiante. A principal razão é porque se passa a ter duas unidades principais de análise: o osso em si (do qual se podem tirar medidas, identificar a espécie, etc.), e cada uma das marcas de corte identificadas (que podem ser individualmente caracterizadas segundo as suas dimensões, perfil, etc.). Uma abordagem possível é adicionar um conjunto de variáveis para cada marca de corte na base de dados, mas isto levanta dois problemas: por um lado, nem todos os ossos terão marcas de corte e isso implica que existirão muitas células em branco; por outro lado, é impossível adivinhar o número de marcas de corte antes de se começar a análise e isso implicaria adicionar novas variáveis durante o estudo, o que deve ser sempre(!) evitado.
+Noutros casos, como por exemplo na análise de marcas de corte em ossos de animais, a situação é muito mais desafiante. A principal razão é porque se passa a ter duas unidades principais de análise: o osso em si (do qual se podem registar medidas, identificar a espécie, etc.), e cada uma das marcas de corte identificadas (que podem ser individualmente caracterizadas segundo as suas dimensões, perfil, etc.). Uma abordagem possível é adicionar um conjunto de variáveis para cada marca de corte na base de dados, mas isto levanta dois problemas: por um lado, nem todos os ossos terão marcas de corte e isso implica que existirão muitas células em branco; por outro lado, é impossível adivinhar o número de marcas de corte antes de se começar a análise e isso implicaria adicionar novas variáveis durante o estudo, o que deve ser sempre(!) evitado.
 
-Assim, nestes casos a melhor estratégia será separar a análise em pelo menos duas tabelas distintas, de acordo com as duas unidades de análise definidas -uma para os ossos, outra para as marcas de corte. Naturalmente, estas duas tabelas deverão estar sempre relacionadas através de um identificador único (i.e., uma chave primária) que permite ligar os dois registos. Mais uma vez, os indentificadores únicos são muito importantes, uma vez que sem essa referência não se conseguem associar os dados registados com o(s) objeto(s) analisados. Assim, é também extremamente importante manter junto do objeto analisado (através de uma etiqueta ou, quando possível, marcação direta na peça) o código do idenfiticador único utilizado. Mesmo no caso de se tratarem de objetos de uma coleção de museu, por exemplo, em que não exista identificador único associado, deve ser criado um sistema de IDs que permita, a qualquer momento durante a análise, associar os dados recolhidos com o objeto analisado.
+Assim, nestes casos a melhor estratégia será separar a análise em pelo menos duas tabelas distintas, de acordo com as duas unidades de análise definidas -uma para os ossos, outra para as marcas de corte. Naturalmente, estas duas tabelas deverão estar sempre relacionadas através de um identificador único (i.e., uma chave primária) que permite ligar os dois registos. Mais uma vez, os identificadores únicos são muito importantes, uma vez que sem essa referência não se conseguem associar os dados registados com o(s) objecto(s) analisados. Assim, é também extremamente importante manter junto do objecto analisado (através de uma etiqueta ou, quando possível, marcação directa na peça) o código do identificador único utilizado. Mesmo no caso de se tratarem de objectos de uma colecção de museu, por exemplo, em que não exista identificador único associado, deve ser criado um sistema de IDs que permita, a qualquer momento durante a análise, associar os dados recolhidos com o objecto analisado.
 
 Uma vez decida a(s) unidade(s) de análise, pode ser criada a base dados atribuindo a cada variável que irá ser medida um nome e especificando que tipo de dados irão ser introduzidos nesse campo. Apesar de parecer frugal, a nomeação das variáveis é muito importante quando se desenha uma bases de dados de qualquer tipo. Os nomes devem não apenas ser únicos, mas devem também ser descritivos e facilmente interpretáveis. Nomes como VAR1, VAR2, VAR3, etc., não permitirão identificar facilmente que informação foi registada naquele campo. Espaços em branco, acentos, e simbolos especiais (e.g., %, \$) devem também ser evitados, uma vez que alguns software têm problemas na conversão desses caracteres. Um caracter que é frequentemente usado, contudo, é o chamado *underscore*, sobretudo para substituir o espaço entre duas ou mais palavras (e.g., Tipo_Talao).
 
-Como anteriormente referido, um dos mais utilizados suportes informáticos para introdução de dados em Arqueologia são as chamadas Folhas de Cálculo. Com os principios definidos acima, é relativamente fácil abrir um documento Google Sheets, inserir os nomes das variáveis na primeira linha e iniciar a análise inserindo informação sobre cada objeto em cada uma das linhas. Esta é a maneira que muitos arqueólogos usam, em todo mundo, para analisar as suas coleções. A principal razão é, claro, a simplicidade. No entanto, alguns problemas são comuns quando se usa esta opção. Um dos melhores exemplos é que quando um conjunto de variáveis não são relevantes para um objeto específico, o utilizador tem de olhar para os nomes das variáveis, saltar com o cursor todas as células que não interessam e reiniciar a análise na próxima variável que é possível registar. Não só este processo demora alguns preciosos segundos, mas principalmente pode facilmente levar a que se preencham células erradas.
+Como anteriormente referido, um dos mais utilizados suportes informáticos para introdução de dados em Arqueologia são as chamadas folhas de cálculo. Com os princípios definidos acima, é relativamente fácil criar um novo documento Google Sheets, inserir os nomes das variáveis na primeira linha e iniciar a análise inserindo informação sobre cada objecto em cada uma das linhas. Esta é a maneira que muitos arqueólogos usam, em todo mundo, para analisar as suas colecções. A principal razão é, claro, a simplicidade. No entanto, alguns problemas são comuns quando se usa esta opção. Um dos melhores exemplos é que quando um conjunto de variáveis não são relevantes para um objecto específico, o utilizador tem de olhar para os nomes das variáveis, saltar com o cursor todas as células que não interessam e reiniciar a análise na próxima variável que é possível registar. Não só este processo demora preciosos segundos, mas principalmente leva a que muitas vezes se preencham células erradas.
 
-#### E5
-
-Existem atualmente opções mais práticas que permitem a introdução mais rápida e com menos erros que a tradicional Folha de Cálculo. Uma das soluções desenvolvidas especificamente para projetos arqueológicos é o software E5, que faz parte do ecosistema de programas criados por Shannon McPherron e Harold Dibble. É totalmente livre e pode ser descarregado em: <https://github.com/surf3s/E5>
+Existem actualmente opções mais práticas que permitem a introdução mais rápida e com menos erros que a tradicional folha de cálculo. Uma das soluções desenvolvidas especificamente para projectos arqueológicos é o software E5, que faz parte do ecossistema de programas criados por Shannon McPherron e Harold Dibble. É totalmente livre e pode ser descarregado em: <https://github.com/surf3s/E5>
 
 O E5 é um programa generalizado de introdução de dados, que funciona com um ficheiro de configuração onde são definidos os campos de introdução de dados. A principal vantagem do E5 é que permite condicionar o preenchimento de variáveis de acordo com valores preenchidos em variáveis anteriores.
 
 O elemento-chave do E5 é o ficheiro de configuração onde são definidos os campos de introdução de dados. Os ficheiros de configuração (que terminam com a extensão CFG) podem parecer um pouco complicados à primeira vista, e devem ser escritos num programa separado (um editor de texto como o [NotePad](https://apps.microsoft.com/store/detail/windows-notepad/9MSMLRH6LZF3), [NotePad++](https://notepad-plus-plus.org/downloads/), [Atom](https://github.com/atom) ou [Sublime text](https://www.sublimetext.com/)). No entanto, o esforço de pensar num ficheiro de configuração significa pensar na estrutura dos seus dados antes de começar a recolhê-los (ao contrário, por exemplo, de usar uma folha de cálculo), e este esforço normalmente compensa mais tarde, durante a análise dos dados.
 
-Vários exemplos de ficheiros CFG estão incluídos na plataforma do E5, e aqui está um exemplo de ficheiro de configuração disponibilizado na página oficial, para ilustrar algumas características:
+Vários exemplos de ficheiros CFG estão incluídos no website do E5, e aqui está um exemplo de ficheiro de configuração disponibilizado na página oficial, para ilustrar algumas características:
 
 ``` cfg
 [E5]
@@ -179,9 +177,9 @@ PROMPT=WEIGHT
 
 O ficheiro está organizado em blocos definidos por \[\]. Cada ficheiro terá um bloco \[E5\] (normalmente no início) que contém definições que se aplicam a todo o ficheiro de configuração. Neste exemplo, há uma opção (*TABLE=*) que diz ao E5 como chamar a tabela da base de dados. Se não for especificada nenhuma tabela, o E5 utiliza '\_default'. Como não é especificado aqui, o próprio ficheiro da base de dados (um ficheiro JSON) terá o mesmo nome que o ficheiro de configuração.
 
-De seguida, há uma série de campos de entrada de dados (mais uma vez, cada um definido com \[\]). Aqui o primeiro campo é um ID de artefacto. A opção "type" indica ao E5 o tipo de dados a aceitar. As opções válidas incluem texto, nota, numérico, menus, booleano (Verdadeiro/Falso), e a data e hora. O *PROMPT* é especificado com uma opção e, em seguida, a opção "unique" indica ao E5 que cada registo de dados deve ter um valor único para este campo. As tentativas de duplicar um valor para este campo geram um aviso e, se a entrada de dados continuar, editará (ou substituirá) o registo anterior com este ID.
+De seguida, há uma série de campos de entrada de dados (mais uma vez, cada um definido com \[\]). Aqui o primeiro campo é um ID de artefacto. A opção *TYPE* indica ao E5 o tipo de dados a aceitar. As opções válidas incluem texto, nota, numérico, menus, booleano (Verdadeiro/Falso), e a data e hora. O *PROMPT* é especificado com uma opção e, em seguida, a opção *UNIQUE* indica ao E5 que cada registo de dados deve ter um valor único para este campo. As tentativas de duplicar um valor para este campo geram um aviso e, se a entrada de dados continuar, editará (ou substituirá) o registo anterior com este ID.
 
-O campo *ArtifactType* demonstra a utilização de menus. Os itens de menu actuais são especificados na opção de menu e são separados por vírgulas. Não há limite para o número de itens de menu e estes são apresentados pela ordem aqui especificada (exceto se a opção ordenada estiver definida como True). O campo *ToolType* que se segue é também um menu, mas demonstra a utilização de condicionantes. Durante a introdução de dados, o menu *ToolType* só é apresentado quando *ArtifactType* é *Tool*, caso contrário o E5 passa para o campo seguinte e insere uma célula vazia ("") no campo *ToolType*.
+O campo *ArtifactType* demonstra a utilização de menus. Os itens de menu actuais são especificados na opção de menu e são separados por vírgulas. Não há limite para o número de itens de menu e estes são apresentados pela ordem aqui especificada (excepto se a opção *SORTED* estiver definida como *TRUE*). O campo *ToolType* que se segue é também um menu, mas demonstra a utilização de condicionantes. Durante a introdução de dados, o menu *ToolType* só é apresentado quando *ArtifactType* é *Tool*, caso contrário o E5 passa para o campo seguinte e insere uma célula vazia ("") no campo *ToolType*.
 
 Do mesmo modo, *PlatformType* está condicionado ao facto de o *ArtifactType* ser *Tool* ou *Flake*. O campo que se segue, *PlatformWidth*, tem duas condições que têm de ser ambas verdadeiras, caso contrário o campo será ignorado e será inserido um valor vazio na tabela da base de dados. A segunda condição ilustra a utilização da palavra *NOT* nas condições. Quando o *PlatformType* é um valor diferente de *Missing*, esta condição é verdadeira.
 
@@ -189,13 +187,11 @@ Tanto o campo *PlatformWidth* como o último campo, *Weight*, são campos numér
 
 ## Aula 04 - Exercício prático de E5 {.unnumbered}
 
-## Aula 05 - Manipulação Básica de Dados - Folhas de cálculo {.unnumbered}
+## Aula 05 - Manipulação básica de dados {.unnumbered}
 
-### Introdução
+Após a fase de recolha dados, seja no campo ou em laboratório, teremos idealmente uma tabela ou um conjunto de tabelas onde a informação está registada de forma organizada e legível, seguindo os princípios e boas práticas da construção de bases de dados. Assim, em principio, os dados estarão preparados para iniciar o processo de análise estatística e, se necessário, algumas operações de limpeza, transformação, e filtragem. Este processo pode ser feito, mais uma vez, em diferentes programas informáticos, dos quais se salientam dois grupos distintos: software comercial com interface de apontar e clicar com o rato (e.g., MS Excel, Google Sheets, SPSS, SAS, Stata, Minitab), e as linguagens de programação que permitem computação estatística (e.g., R, Python). O modo dominante de interacção com as ferramentas de análise de dados para muitos investigadores é com o primeiro grupo. Apesar de muito potentes, a forma de interacção com esses software é um obstáculo à reprodutibilidade, porque os gestos do rato deixam poucos vestígios que sejam duradouros e acessíveis a outros investigadores. Por outro lado, quase todos esses programas implicam a compra de uma licença, o que também dificulta a partilha de ficheiros com pessoas que não tenham acesso a uma licença do software em questão. Neste âmbito, o Google Sheets é uma das melhores opções, por se tratar de uma plataforma livre, com praticamente todas as funcionalidades do MS Excel, e com a vantagem de funcionar através de armazenamento na nuvem, facilitando a partilha de ficheiros e a colaboração em tempo real. Por estas razões, os próximos exemplos referentes à manipulação de dados serão todos realizados com recurso ao Google Sheets.
 
-Após a fase de recolha dados, seja no campo ou em laboratório, teremos idealmente uma tabela ou um conjunto de tabelas onde a informação está registada de forma organizada e legível, seguindo os principios e boas práticas da construção de bases de dados. Assim, em principio, os dados estarão preparados para iniciar o processo de análise estatística e, se necessário, algumas operações de limpeza, transformação, e filtragem. Este processo pode ser feito, mais uma vez, em diferentes programas informáticos, dos quais se salientam dois grupos distintos: software comercial com interface de apontar e clicar com o rato (e.g., MS Excel, Google Sheets, SPSS, SAS, Stata, Minitab), e as linguagens de programação que permitem computação estatística (e.g., R, Python). O modo dominante de interação com as ferramentas de análise de dados para muitos investigadores é com o primeiro grupo. Apesar de muito potentes, a forma de interação com esses software é um obstáculo à reprodutibilidade, porque os gestos do rato deixam poucos vestígios que sejam duradouros e acessíveis a outros investigadores. Por outro lado, quase todos esses programas implicam a compra de uma licença, o que também dificulta a partilha de ficheiros com pessoas que não tenham acesso a uma licença do software em questão. Neste âmbito, o Google Sheets é uma das melhores opções, por se tratar de uma plataforma livre, com praticamente todas as funcionalidades do mais comum MS Excel, e com a vantagem de funcionar através de armazenamento na nuvem, facilitando a partilha de ficheiros e a colaboração em tempo real. Por estas razões, os próximos exemplos referentes à manipulação de dados serão todos realizados com recurso ao Google Sheets.
-
-A manipulação de dados refere-se ao processo de alteração, organização, e limpeza para extrair informações e tornar os dados mais úteis para vários fins. Ainda que seja esperado que a nossa base de dados esteja o mais limpa possível, não são raras as vezes em que temos que trabalhar com ficheiros que não cumprem com as boas práticas e que necessitam, portanto, de várias operações de formatação antes de poderem ser analisados estatísticamente.
+A manipulação de dados refere-se ao processo de alteração, organização, e limpeza para extrair informações e tornar os dados mais úteis para vários fins. Ainda que seja esperado que a nossa base de dados esteja o mais limpa e organizada possível, não são raras as vezes em que temos que trabalhar com ficheiros que não cumprem com as boas práticas e que necessitam, portanto, de várias operações de formatação antes de poderem ser analisados estatisticamente.
 
 No Google Sheets, a manipulação de dados pode ser efectuada utilizando vários recursos e funções que se passam a detalhar.
 
@@ -203,19 +199,19 @@ No Google Sheets, a manipulação de dados pode ser efectuada utilizando vários
 
 As três operações básicas de qualquer programa de folhas de cálculo são o formatar, ordenar e filtrar.
 
-Quando se importa um ficheiro para o Google Sheets devemos não só verificar que cada coluna corresponde a uma variável que está devidamente nomeada na primeira linha da tabela e cada linha corresponde a uma entrada, mas também que o tipo de dados para cada coluna é o correto. Apesar de o programa automaticamente identificar os diferentes tipos de dados, verificar e selecionar o formato de dados correto para cada coluna no Google Sheets é crucial para uma representação precisa dos dados e uma manipulação adequada dos mesmos. Para verificar o formato selecciona-se a coluna inteira ou o intervalo de células que se pretende, e no menu *Format,* em *Number* pode-se seleccionar o formato melhor adaptado ao tipo de dados presentes naquela coluna (e.g., Number, Plain text, Currency, Date).
+Quando se importa um ficheiro para o Google Sheets devemos não só verificar que cada coluna corresponde a uma variável que está devidamente nomeada na primeira linha da tabela e cada linha corresponde a uma entrada, mas também que o tipo de dados para cada coluna é o correto. Apesar de o programa automaticamente identificar os diferentes tipos de dados, verificar e seleccionar o formato de dados correto para cada coluna no Google Sheets é crucial para uma representação precisa dos dados e uma manipulação adequada dos mesmos. Para verificar o formato selecciona-se a coluna inteira ou o intervalo de células que se pretende, e no menu *Format,* em *Number* pode-se seleccionar o formato melhor adaptado ao tipo de dados presentes naquela coluna (e.g., Number, Plain text, Currency, Date).
 
-A ordenação de dados nas folhas de cálculo é essencial para organizar as informações numa ordem específica com base em critérios seleccionados. Para ordenar dados, em primeiro lugar, selecciona-se o intervalo de células ou a coluna que se pretende ordenar, e no menu *Data* pode-se selecionar *Sort sheet A-Z* para ordem ascendente ou *Sort sheet Z-A* para ordem decrescente. Se a variável em causa for um campo de texto, as células são organizadas alfabeticamente. Além disso, pode-se utilizar a opção *Advanced range sorting option* para ordenar com base em várias colunas, permitindo adaptar a ordenação às necessidades específicas.
+A ordenação de dados nas folhas de cálculo é essencial para organizar as informações numa ordem específica com base em critérios seleccionados. Para ordenar dados, em primeiro lugar, selecciona-se o intervalo de células ou a coluna que se pretende ordenar, e no menu *Data* pode-se seleccionar *Sort sheet A-Z* para ordem ascendente ou *Sort sheet Z-A* para ordem decrescente. Se a variável em causa for um campo de texto, as células são organizadas alfabeticamente. Além disso, pode-se utilizar a opção *Advanced range sorting option* para ordenar com base em várias colunas, permitindo adaptar a ordenação às necessidades específicas.
 
 A filtragem de dados é outra funcionalidade importante que ajuda a extrair informações relevantes de grandes conjuntos de dados. Para aplicar filtros, selecciona-se a coluna relevante, e no menu *Data* selecciona-se *Create a filter*. As opções de filtro aparecerão no nome de cada coluna, permitindo mostrar ou ocultar linhas que correspondem a critérios específicos.
 
-### Usar operadores e fórmulas para manipulação de dados
+### Usar operadores e funções para manipulação de dados
 
-Existem duas formas básicas de manipular os dados: através da utilização de operadores e de funções. Os operadores são sinais especiais que efectuam (normalmente) alterações simples. As funções são mais parecidas com fórmulas que muitas vezes processam vários dados para obter um resultado e podem ser bastante poderosas e complexas, dependendo do software que se estiver a utilizar. Em seguido apresentamos os vários operadores e funções de acordo com os formatos de dados que já discutimos, uma vez que os operadores e as funções podem variar consoante o formato de dados. Note-se que, quando se trabalha com uma base de dados, normalmente não se alteram os valores contidos numa coluna. Em vez disso, coloca-se o resultado da sua manipulação numa nova coluna. A principal razão para não substituir ou alterar os valores de uma variável, pelo menos inicialmente, é que, se o se fizer incorretamente, pode ser difícil ou impossível de repor os valores originais. Suponhamos que temos uma variável chamada "Cor" com os valores "Azul", "Vermelho" ou "Amarelo". Pretendemos alterar todos os vermelhos para azuis, mas acidentalmente alteramos todos os amarelos para azuis. Agora não temos forma de saber quais os valores azuis que têm de ser convertidos novamente em amarelos. Por isso, é sempre melhor colocar os resultados numa nova coluna, que pode ser comparada lado a lado com a coluna original. Quando estivermos convencidos de que a nova coluna contém os resultados pretendidos, podemos eliminar a coluna original e mudar o nome da nova coluna para o da coluna original.
+Existem duas formas básicas de manipular os dados: através da utilização de operadores ou de funções. Os operadores são sinais especiais que efectuam (normalmente) alterações simples. As funções são mais parecidas com fórmulas que muitas vezes processam vários dados para obter um resultado e podem ser bastante poderosas e complexas, dependendo do software que se estiver a utilizar. Em seguida apresentam-se os vários operadores e funções de acordo com os formatos de dados anteriormente mencionados, uma vez que os operadores e as funções podem variar consoante o formato de dados. Note-se que, quando se trabalha com uma base de dados, normalmente não se alteram os valores contidos numa coluna. Em vez disso, coloca-se o resultado da sua manipulação numa nova coluna. A principal razão para não substituir ou alterar os valores de uma variável, pelo menos inicialmente, é que, se o se fizer incorrectamente, pode ser difícil ou impossível de repor os valores originais. Suponhamos que temos uma variável chamada "Cor" com os valores "Azul", "Vermelho" ou "Amarelo". Pretendemos alterar todos os vermelhos para azuis, mas acidentalmente alteramos todos os amarelos para azuis. Agora não temos forma de saber quais os valores azuis que têm de ser convertidos novamente em amarelos. Por isso, é sempre melhor colocar os resultados numa nova coluna, que pode ser comparada lado a lado com a coluna original. Quando estivermos convencidos de que a nova coluna contém os resultados pretendidos, podemos eliminar a coluna original e mudar o nome da nova coluna para o da coluna original.
 
 #### Variáveis numéricas
 
-Os operadores básicos que podem ser utilizados com uma variavél numérica reflectem todas as várias operações aritméticas com as quais já estamos familiarizados: adição (+), subtração (-), multiplicação (\*), divisão (/), elevação a uma potência (\^), etc. O conceito básico é exatamente igual ao da álgebra. Por exemplo, se VAR1 e VAR2 são duas colunas que contêm valores numéricos, podemos fazer o seguinte:
+Os operadores básicos que podem ser utilizados com uma variável numérica reflectem todas as várias operações aritméticas com as quais estamos familiarizados: adição (+), subtracção (-), multiplicação (\*), divisão (/), elevação a uma potência (\^), etc. O conceito básico é exactamente igual ao da álgebra. Por exemplo, se VAR1 e VAR2 são duas colunas que contêm valores numéricos, podemos fazer o seguinte:
 
 ```         
     VAR3 = VAR1 + VAR2 - soma os dois valores
@@ -229,17 +225,17 @@ Os operadores básicos que podem ser utilizados com uma variavél numérica refl
     VAR3 = VAR1 ^ 2 - calcula o quadrado de VAR1
 ```
 
-No Google Sheets este tipo de operação é muito simples de efetuar. Basta na célula vazia em que queremos o resultado do cálculo introduzir o símbolo de igual (=), seguido da referência espacial da célula onde se encontra o primeiro valor, o operador matemático, e a referência espacial da célula onde se encontra o segundo valor. É importante notar que a referência espacial é dada automaticamente pelo programa assim que se seleciona a célula. Imaginemos que, com base nos valores de das variáveis Comprimento e Largura de um conjunto de sítios arqueológicos, queremos calcular a Área dos mesmos. A imagem abaixo demonstra como o fazer na folha de cálculo.
+No Google Sheets este tipo de operação é muito simples de efectuar. Basta na célula vazia em que queremos o resultado do cálculo introduzir o símbolo de igual (=), seguido da referência espacial da célula onde se encontra o primeiro valor, o operador matemático, e a referência espacial da célula onde se encontra o segundo valor. É importante notar que a referência espacial é dada automaticamente pelo programa assim que se selecciona uma célula. Imaginemos que, com base nos valores das variáveis Comprimento e Largura de um conjunto de sítios arqueológicos, queremos calcular a Área dos mesmos. A imagem abaixo demonstra como o fazer na folha de cálculo.
 
-![Exemplo do uso de operador aritmético para calcular a Área com base nos valores de Comprimento e Largura. As referências espaciais das células neste caso são o A2 (valor para o Comprimento) e B2 (valor para a Largura).](images/Screenshot 2023-08-08 at 12.18.04.png){width="10cm"}
+![Exemplo do uso de operador aritmético para calcular a Área com base nos valores de Comprimento e Largura. As referências espaciais das células neste caso são o A2 (valor para o Comprimento) e B2 (valor para a Largura).](images/Screenshot%202023-08-08%20at%2012.18.04.png){width="10cm"}
 
-Também que podemos efetuar estas operações aritméticas não só com os valores contidos nas células, mas também com quaisquer parâmetros numéricos ou constantes. Por exemplo, para converter um valor em polegadas para centímetros, faríamos o seguinte:
+Também que podemos efectuar estas operações aritméticas não só com os valores contidos nas células, mas também com quaisquer parâmetros numéricos ou constantes. Por exemplo, para converter um valor em polegadas para centímetros, faríamos o seguinte:
 
 ```         
-    Comprimento_cms = Comprimento_inch * 2,54
+    Comprimento_cms = Comprimento_poleg * 2,54
 ```
 
-Estas expressões algébricas (ou fórmulas ou equações) podem ser muito complexas, como é óbvio, com a utilização combinada de vários operadores diferentes. Neste caso, é importante ter em conta que existe uma prioridade inerente a certas operações: os expoentes são calculados em primeiro lugar, seguidas da divisão e da multiplicação e, finalmente, da adição e da subtração. Assim, na expressão:
+Estas expressões algébricas (ou fórmulas ou equações) podem ser muito complexas, como é óbvio, com a utilização combinada de vários operadores diferentes. Neste caso, é importante ter em conta que existe uma prioridade inerente a certas operações: os expoentes são calculados em primeiro lugar, seguidas da divisão e da multiplicação e, finalmente, da adição e da subtracção. Assim, na expressão:
 
 ```         
     VAR3 = 3 + 4 / 2^2
@@ -253,9 +249,9 @@ o resultado é 4. Isto acontece porque a primeira operação efectuada é elevar
 
 o resultado é 12,25. A primeira operação efectuada é a adição de 3 e 4 (resultando em 7); de seguida, divide-se por 2 e eleva-se o resultado ao quadrado. Obviamente, temos de ter extremo cuidado com este tipo de operações complexas, e é sempre boa ideia verificar algumas respostas à mão para ter a certeza de que se está a obter os resultados pretendidos. Note-se também que um erro comum quando se introduzem fórmulas complexas com parênteses é omitir um dos pares de parênteses. Assim, se o computador devolver um erro, deve-se sempre verificar que para cada parêntesis aberto, existe um parêntesis fechado correspondente.
 
-As funções são semelhantes aos operadores, mas enquanto estes combinam valores para produzir um novo valor, as funções transformam ou actuam tipicamente sobre um determinado valor. Têm também um formato diferente, com o nome da função seguido de um conjunto de parêntesis que contém o argumento numérico (ou valor) sobre o qual a função actua. Se houver mais que um argumento, são separados por vírgulas.
+As funções são semelhantes aos operadores, mas enquanto estes combinam valores para produzir um novo valor, as funções transformam ou actuam tipicamente sobre um determinado valor. Têm também um formato diferente, com o nome da função seguido de um conjunto de parêntesis que contém o argumento numérico (ou valor) sobre o qual a função actua. Se houver mais que um argumento, estes são separados por vírgulas ou ponto e vírgula.
 
-Nas folhas de cálculo do Google Sheets, as funções são fórmulas pré-construídas concebidas para efetuar cálculos específicos, manipulações ou tarefas de análise de dados. Estas funções são ferramentas poderosas que poupam tempo e esforço através da automatização de cálculos complexos. Estas seguem uma sintaxe específica que não é muito distinta da dos operadores, inciando-se com o símbolo de igual (=), o nome da função, e entre parêntesis os valores que irão ser usados no cálculo. Algumas das funções mais comumente utilizadas com variáveis numéricas são:
+Nas folhas de cálculo do Google Sheets, as funções são fórmulas pré-construídas concebidas para efectuar cálculos específicos, manipulações ou tarefas de análise de dados. Estas funções são ferramentas poderosas que poupam tempo e esforço através da automatização de cálculos complexos. Seguem uma sintaxe específica que não é muito distinta da dos operadores, iniciando-se com o símbolo de igual (=), o nome da função, e entre parêntesis os valores que irão ser usados no cálculo. Algumas das funções mais comummente utilizadas com variáveis numéricas são:
 
 ```         
     SUM: Calcula a soma de um intervalo de células.
@@ -283,11 +279,11 @@ Nas folhas de cálculo do Google Sheets, as funções são fórmulas pré-constr
     TEXT: Formata um número em texto.
 ```
 
-No caso das funções que calculam um novo valor com base num intervalo de células, estas podem ser usadas para fazer o cálculo ao longo de uma linha ou de uma coluna. A imagem abaixo demonstra a utilização de funções AVERAGE e SQRT no Google Sheets:
+No caso das funções que calculam um novo valor com base num intervalo de células, estas podem ser usadas para fazer o cálculo ao longo de uma linha ou de uma coluna. A imagem abaixo demonstra a utilização de funções AVERAGE e SQRT para obter a média e o desvio padrão no Google Sheets:
 
-![Exemplo de utilização das funções *AVERAGE* e *SQRT* no Google Sheets para obter a média dos valores de uma coluna, e a raíz quadrada de um valor.](images/Screenshot 2023-08-08 at 15.01.11-01.png){width="16cm"}
+![Exemplo de utilização das funções *AVERAGE* e *SQRT* no Google Sheets para obter a média dos valores de uma coluna, e a raíz quadrada de um valor.](images/Screenshot%202023-08-08%20at%2015.01.11-01.png){width="16cm"}
 
-Podemos também combinar funções numa expressão tal como combinámos operadores anteriormente. Por exemplo, se quisermos obter a raiz quadrada da diferença de dois números. Por vezes, a diferença entre dois números é negativa, e a maioria dos sistemas informáticos não permite que se tire a raiz quadrada de um número negativo. Para evitar esta possibilidade, pode-se obter o valor absoluto (i.e., o valor positivo) da diferença antes de obter a raiz quadrada.
+Podemos também combinar funções numa expressão tal como combinámos operadores anteriormente. Por exemplo, se quisermos obter a raiz quadrada da diferença de dois números. Por vezes, a diferença entre dois números é negativa, e a maioria dos sistemas informáticos não permite que se tire a raiz quadrada de um número negativo. Para evitar esta possibilidade, pode-se obter o valor absoluto (i.e., o valor positivo) da diferença antes de obter a raiz quadrada:
 
 ```         
     VAR3 = SQRT(ABS(VAR2-VAR1))
@@ -295,13 +291,13 @@ Podemos também combinar funções numa expressão tal como combinámos operador
 
 #### Variáveis de texto
 
-Tipicamente, apenas um operador está disponível para trabalhar com valores de caracteres: o operador de concatenação (+ ou &). A concatenação combina dois valores de caracteres juntando simplesmente um ao outro. Por exemplo, "Paleolitico" & "Medio" resulta em "PaleoliticoMedio". Se quisermos formatar a expressão com um espaço no meio, podemos fazer o seguinte:
+Tipicamente, apenas um operador está disponível para trabalhar com texto, o operador de concatenação (+ ou &). A concatenação combina dois valores de caracteres juntando simplesmente um ao outro. Por exemplo, "Paleolítico" & "Médio" resulta em "PaleolíticoMédio". Se quisermos formatar a expressão com um espaço no meio, podemos fazer o seguinte:
 
 ```         
-    "Paleolitico" & " " & "Medio"
+    "Paleolítico" & " " & "Médio"
 ```
 
-o que resulta em "Paleolitico Medio".
+o que resulta em "Paleolítico Médio".
 
 Em contrapartida, existem muitas funções úteis para texto. As mais comuns são as seguintes:
 
@@ -323,109 +319,96 @@ Em contrapartida, existem muitas funções úteis para texto. As mais comuns sã
       SUBSTITUTE: Substitui as ocorrências de um texto específico numa cadeia de texto por outro texto.
 ```
 
-Também com estas funções é possível combinar duas ou mais funções para alterar ou criar um novo valor. Imaginemos
+Também com estas funções é possível combinar duas ou mais funções para alterar ou criar um novo valor. O exemplo abaixo demonstra como podemos extrair um conjunto de caracteres de uma célula e transformá-los em maiúsculas através da combinação das funções LEFT e UPPER do Google Sheets:
+
+![Exemplo de utilização das funções UPPER e LEFT no Google Sheets para obter extrair apenas o tipo de classe de artefacto lítico (i.e., lâmina, lamela) sem indicação da porção analisada (i.e., proximal, distal, mesial).](images/Screenshot 2023-08-09 at 16.52.18.png){width="10cm"}
 
 #### Funções de lógica e de pesquisa
 
 Finalmente, ficam a faltar um conjunto de funções que se podem aplicar à maior parte do tipo de dados e que, apesar de serem mais complexas no seu funcionamento, são de grande relevância.
 
-Com as funções de pesquisa, podem-se obter dados com base em critérios específicos. Duas das mais utilizadas são as funções VLOOKUPe HLOOKUP. A função VLOOKUP procura um valor na coluna mais à esquerda de um intervalo especificado e retorna um valor correspondente de uma coluna diferente na mesma linha. É normalmente utilizada para efetuar pesquisas verticais e em grandes conjuntos de dados. A função HLOOKUP funciona de forma semelhante à VLOOKUP, mas pesquisa horizontalmente na primeira linha de um intervalo especificado e devolve um valor correspondente de uma linha diferente. O exemplo abaixo demonstra como utilizar a função VLOOKUP para procurar o tipo de sítio arqueológico com base no ID atribuído.
+Com as funções de pesquisa, podem-se obter dados com base em critérios específicos. Duas das mais utilizadas são as funções VLOOKUP e HLOOKUP. A função VLOOKUP procura um valor na coluna mais à esquerda de um intervalo especificado e retorna um valor correspondente de uma coluna diferente na mesma linha. É normalmente utilizada para efetuar pesquisas verticais e em grandes conjuntos de dados. A função HLOOKUP funciona de forma semelhante à VLOOKUP, mas pesquisa horizontalmente na primeira linha de um intervalo especificado e devolve um valor correspondente de uma linha diferente. O exemplo abaixo demonstra como utilizar a função VLOOKUP para procurar o tipo de sítio arqueológico com base no ID atribuído. Esta função é extremamente útil, por exemplo, quando queremos juntar dados de duas tabelas com uma chave primária comum.
 
-![Exemplo de utilização da função VLOOKUP. A função necessita da seguinte ordem de atributos para funcionar: search_key (o valor a procurar, que no exemplo é a célula C4), *range* (o intervalo a ser considerado para a pesquisa, sendo que a primeira coluna no intervalo é pesquisada para a *search_key* e que no exemplo são todas as células ente A2 e B8), *index* (a posição da coluna de onde se extrai o valor, neste caso trata-se da segunda coluna do intervalo selecionado), *is_sorted* (opcional - indica se a coluna a ser pesquisada - a primeira coluna do intervalo especificado - está ordenada, caso em que será devolvida a correspondência mais próxima para a *search_key*).](images/Screenshot 2023-08-08 at 16.01.53.png){width="18cm"}
+![Exemplo de utilização da função VLOOKUP. A função necessita da seguinte ordem de atributos para funcionar: search_key (o valor a procurar, que no exemplo é a célula C4), *range* (o intervalo a ser considerado para a pesquisa, sendo que a primeira coluna no intervalo é pesquisada para a *search_key* e que no exemplo são todas as células ente A2 e B8), *index* (a posição da coluna de onde se extrai o valor, neste caso trata-se da segunda coluna do intervalo selecionado), *is_sorted* (opcional - indica se a coluna a ser pesquisada - a primeira coluna do intervalo especificado - está ordenada, caso em que será devolvida a correspondência mais próxima para a *search_key*).](images/Screenshot%202023-08-08%20at%2016.01.53.png){width="18cm"}
 
-As funções de lógica permitem tomar decisões com base em condições, permitindo um processamento de dados mais avançado. Uma das mais utéis é a função IF. Esta avalia uma condição e devolve valores diferentes com base no facto de a condição ser verdadeira ou falsa. Tem três argumentos necessários para o seu funcionamento correto:
+As funções de lógica permitem tomar decisões com base em condições, permitindo um processamento de dados mais avançado. Uma das mais úteis é a função IF. Esta avalia uma condição e devolve valores diferentes com base no facto de a condição ser verdadeira ou falsa. Tem três argumentos necessários para o seu funcionamento correto:
 
 ```         
-=IF(logical_expression, [value_if_true], [value_if_false])
+=IF(expressão_lógica, [valor_se_verdadeiro], [valor_se_falso])
 ```
 
-No exemplo abaixo, usa-se a função IF para, com base nos valores de comprimento e largura de utensílios líticos preencher uma nova coluna com o tipo de suporte. A ideia é que se for verdade que o comprimento é superior ou igual a duas vezes a largura, a célula será preenchida com a opção "Alongado" (i.e., lamela ou lâmina), se, pelo contrário a expressão lógica não se verificar, então a célula será preenchida com a opção "Lasca".
+No exemplo abaixo, usa-se a função IF para, com base nos valores de comprimento e largura de utensílios líticos preencher uma nova coluna com o tipo de suporte. A ideia é que se for verdade que o comprimento é superior ou igual a duas vezes a largura, a célula será preenchida com a opção "Alongado", se, pelo contrário a expressão lógica não se verificar, então a célula será preenchida com a opção "Lasca".
 
-![](images/Screenshot 2023-08-08 at 16.30.43.png){width="15cm"}
+![Exemplo da utilização da função IF no Google Sheets.](images/Screenshot%202023-08-08%20at%2016.30.43.png){width="15cm"}
 
-## Aula 06 - Exercício prático Google Sheets {.unnumbered}
+## Aula 06 - Exercício prático de manipulação de dados {.unnumbered}
 
-## Aula 07 - Manipulação básica de dados - R {.unnumbered}
+## Aula 07 - Análise de variáveis {.unnumbered}
 
-#### Começar a utilizar o R
+Como anteriormente ficou patente, os dados arqueológicos apresentam-se sob várias formas quando registados numa base de dados. De facto, um dos primeiros passos na configuração de um ficheiro que vai receber qualquer tipo de dados é a decisão de que tipo de dados cada coluna irá receber. Em linguagem de base de dados, a divisão dos vários tipos está sobretudo relacionada com a forma como a informação será guardada. No entanto, no momento de analisar essas mesmas variáveis através de métodos aritméticos e estatísticos, a sua classificação obedece a princípios ligeiramente diferentes. Assim, de um ponto de vista estatístico podemos classificar os dados como:
 
-O R é uma poderosa linguagem de programação, amplamente utilizada para computação estatística e análise de dados em vários domínios científicos, incluindo a Arqueologia. De facto, na última década, a linguagem R é a que mais tem sido utilizada, salientando alguns autores que a sua crescente adopção tem provocado uma verdadeira revolução na disciplina @schmidt2020. Algumas das principais razões pelas quais o R é utilizado em arqueologia:
+-   **Dados qualitativos (ou não numéricos, ou categóricos)**. Os dados qualitativos captam informação categórica sem valores numéricos. Estes dados são frequentemente expressos através de etiquetas, códigos ou categorias. Exemplos incluem tipos de artefactos, práticas de enterramento, tipos de povoamento e estilos de cerâmica. Os dados qualitativos podem ainda ser classificados com base nas suas características:
 
--   [Análise e visualização de dados]{.underline}: Os arqueólogos lidam frequentemente com grandes conjuntos de dados provenientes de escavações ou trabalho laboratorial. O R fornece inúmeros pacotes para manipulação, análise e visualização de dados, facilitando a exploração e interpretação de dados arqueológicos. Desde estatísticas sumárias simples a métodos estatísticos avançados, o R pode lidar com uma vasta gama de tarefas analíticas.
+    -   **Dados nominais**. Os dados nominais representam categorias distintas sem qualquer ordem ou classificação inerente. Os exemplos incluem tipos de artefactos (e.g., estilos de cerâmica, tipos de ferramentas líticas), classificações de sítios (e.g., gruta, abrigo, cidade) e categorizações de género (e.g., masculino, feminino).
 
--   [Ferramentas estatísticas]{.underline}: O R oferece um conjunto abrangente de ferramentas estatísticas que são essenciais, nomeadamente uma grande variedade de modelos de regressão, testes de hipóteses, análises multivariadas e estatísticas espaciais.
+    -   **Dados ordinais.** Na escala ordinal, os dados têm uma ordem inerente, mas os intervalos entre os valores não são uniformes. Exemplos incluem a classificação de bens funerários (e.g., estatuto alto, médio, baixo), camadas estratigráficas (e.g., superior, médio, inferior) e níveis de hierarquia social.
 
--   [SIG e análise espacial:]{.underline} Os Sistemas de Informação Geográfica (SIG) desempenham um papel crucial na Arqueologia, uma vez que a distribuição espacial de sítios e elementos arqueológicos é frequentemente significativa. O R tem pacotes como 'sp,' 'raster,' e 'sf' que permitem efetuar análises espaciais sofisticadas, criar mapas e sobrepor dados arqueológicos em camadas geográficas.
+-   **Dados quantitativos (ou numéricos).** Os dados quantitativos envolvem valores numéricos e podem ser medidos utilizando unidades padronizadas. Estes dados permitem uma análise matemática e uma comparação precisa. Os exemplos incluem contagens de artefactos, medidas (comprimento, peso, etc.) e coordenadas de sítios arqueológicos. Os dados quantitativos podem ainda ser classificados com base nas suas características:
 
--   [Reprodutibilidade e documentação]{.underline}: O R promove um fluxo de trabalho transparente e reproduzível, o que é crucial para a investigação científica, incluindo a Arqueologia. Ao utilizar scripts R, podem-se documentar as análises passo a passo, facilitando a compreensão e a reprodução dos resultados por outras pessoas.
+    -   **Dados contínuos.** Os dados contínuos são medidas que podem assumir qualquer valor dentro de um determinado intervalo. Estes valores são frequentemente representados numa escala contínua. Exemplos em arqueologia incluem pesos de artefactos, profundidades de camadas arqueológicas e distâncias entre sítios.
 
--   [Integração com outras ferramentas]{.underline}: O R pode ser facilmente integrado noutras linguagens e ferramentas de programação, permitindo utilizar *software* e bibliotecas especializadas para tarefas específicas. Por exemplo, o R pode interagir com programas como o QGIS, GRASS GIS e bases de dados como o PostgreSQL, melhorando as capacidades de gestão e análise de dados.
+    -   **Dados discretos.** Os dados discretos são valores contados que são distintos e separados. Surgem frequentemente da contagem de ocorrências ou da enumeração de objectos. Exemplos incluem contagens de artefactos, o número de enterramentos num sítio e o número de tipos específicos de artefactos.
 
--   [Comunidade e recursos]{.underline}: O R tem uma comunidade de utilizadores grande e ativa. Esta comunidade cria e mantém numerosos pacotes adaptados a necessidades arqueológicas específicas. A disponibilidade destes pacotes expande consideravelmente a gama de análises que podem ser efectuadas com o R.
+Por outro lado, as variáveis podem ser organizadas segundo a escala de medida. Esta refere-se à natureza e às características dos dados que ditam as operações matemáticas que podem ser efectuadas sobre eles. Existem quatro escalas de medida principais:
 
--   [Flexibilidade e personalização]{.underline}: O R é uma linguagem de código aberto, o que significa que se podem personalizar e alargar as funcionalidades para se adequarem às suas necessidades específicas de investigação. Podem-se criar funções, pacotes e visualizações, tornando o R uma ferramenta flexível e adaptável para necessidades diversas.
+-   **Escala Nominal.** Os dados na escala nominal são categóricos e não têm qualquer ordem ou classificação inerente. Exemplos incluem género, grupo étnico e tipos de artefactos. Os dados nominais permitem o agrupamento e a classificação, mas as operações matemáticas, como a adição ou a multiplicação, não são significativas.
 
--   [Económica]{.underline}: O R é um software gratuito e de código aberto, tornando-o acessível a todos. Elimina a necessidade de adquirir licenças dispendiosas de software estatístico, tornando-o uma opção atractiva para investigadores e instituições académicas.
+-   **Escala ordinal.** Os dados ordinais apresentam uma ordem ou classificação inerente entre categorias, mas os intervalos entre categorias não são uniformes. Os exemplos incluem respostas a inquéritos (por exemplo, concordo totalmente, concordo, neutro, discordo, discordo totalmente) e camadas estratigráficas. Embora os dados ordinais permitam comparações relativas, não é possível efetuar medições precisas devido aos intervalos irregulares.
 
-##### R Instalação e configuração
+-   **Escala intervalar.** Os dados de escala intervalar possuem intervalos consistentes entre valores, mas não têm um verdadeiro ponto zero. A temperatura medida em Celsius ou Fahrenheit serve de exemplo. Em arqueologia, as escalas de intervalo podem ser aplicadas para representar sequências cronológicas de estilos de artefactos ou a distribuição de percentagens de composição de artefactos.
 
-O R pode ser descarregado a partir do [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Depois de instalar o R, deve instalar o [RStudio](https://posit.co/products/open-source/rstudio/), um ambiente de desenvolvimento integrado que fornece uma interface de fácil utilização para trabalhar com o R. O RStudio oferece funcionalidades como realce de sintaxe, conclusão de código e visualização de gráficos, tornando a experiência de programação mais fácil. Depois de instalados os dois programas apenas é necessário abrir o RStudio, uma vez que o R será automaticamente iniciado.
+-   **Escala de razão.** Os dados da escala de razão não só têm intervalos uniformes como também apresentam um verdadeiro ponto zero. Os exemplos incluem contagens de artefactos, pesos de artefactos, ou distâncias entre sítios arqueológicos. As escalas de proporção permitem proporções significativas e várias operações matemáticas, como a adição, a subtração, a multiplicação e a divisão.
 
-#### Noções básicas de R e estruturas de dados
+O tipo de dados corresponde directamente à escala de medida. Por exemplo, os dados qualitativos alinham-se frequentemente com escalas nominais ou ordinais, enquanto que os dados quantitativos alinham-se tipicamente com escalas de intervalos ou rácios.
 
-##### A interface do RStudio
+### Medidas de tendência central
 
-O RStudio é um ambiente de desenvolvimento integrado (IDE na sigla inglesa) concebido especificamente para a linguagem de programação R. Fornece uma interface de fácil utilização que simplifica o processo de escrita, execução e gestão de código R. A interface está dividida em vários componentes-chave, cada um servindo um objetivo único para aumentar a produtividade do utilizador.
+As medidas de tendência central usam um único valor representativo num conjunto de dados que indique o seu centro. Estas medidas fornecem um resumo conciso da distribuição e destacam o valor típico que reflecte a essência dos dados. Em Arqueologia, as medidas de tendência central ajudam-nos a discernir padrões, a fazer comparações e a tirar conclusões sobre um conjunto de dados.
 
--   *Source*: Este painel é onde se escreve/visualiza os scripts R (identificados com a extensão .R). Alguns resultados (tais como visualizar um conjunto de dados utilizando *View()*) aparecerão como um separador aqui.
+Três medidas de tendência central são principalmente utilizadas:
 
--   *Console/Terminal/Jobs*: É aqui que se vê a execução dos comandos. É o mesmo ecrã que se veria se estivessemos a utilizar o R na linha de comandos sem o RStudio. Pode-se trabalhar interactivamente (ou seja, introduzir comandos R aqui), mas na maior parte das vezes executa-se um *script* (ou linhas num *script*) no painel *Source* e vê-se a sua execução e resultados aqui. O separador *Terminal* dá acesso ao terminal BASH (o sistema operativo Linux, não relacionado com o R).
+-   **Média**. A média é calculada somando todos os valores num conjunto de dados e dividindo pelo número de observações. Representa o ponto de equilíbrio da distribuição dos dados. A média é especialmente útil quando os dados seguem uma distribuição normal (ou simétrica), uma vez que é sensível a valores extremos. Esta estatística só tem significado para variáveis de tipo quantitativo. Para calcular a média, somam-se todos os valores e dividi-se pelo número de observações. A fórmula é a seguinte:
 
--   *Environment/History*: Aqui, o RStudio mostra quais os conjuntos de dados e objectos que criou e quais estão definidos na memória. Também pode ver algumas propriedades de objectos/conjuntos de dados, como o seu tipo e dimensões. O separador *History* contém um histórico dos comandos R executados durante a sessão.
+    ```         
+    Média = Soma dos valores / Número de observações
+    ```
 
--   *Files/Plots/Packages/Help/Viewer*: Este painel polivalente mostra-lhe o conteúdo dos directórios no seu computador. Também pode usar o separador *Files* para navegar e definir o diretório de trabalho. O separador *Plots* mostra a saída de quaisquer gráficos gerados. Em *Packages* verá os pacotes que estão ativamente carregados ou pode anexar pacotes instalados. "Help" mostra os ficheiros de ajuda para as funções e pacotes do R. O separador *Viewer* permite-lhe ver o conteúdo local da Web (por exemplo, resultados HTML).
+-   **Mediana.** A mediana é o valor intermédio num conjunto de dados quando este é organizado por ordem ascendente ou descendente. É menos afetada por valores extremos e fornece uma estimativa robusta da tendência central. Para calcular a mediana, organizam-se os dados em ordem crescente e encontra-se o valor localizado a meio da distribuição, para 50% das observações sejam superiores ou iguais à medias e 50% sejam inferiores ou iguais à mediana. Se o conjunto de dados tiver um número par de observações, a mediana é a média dos dois valores intermédios. A mediana não é influenciada por valores extremos e o seu cálculo exige que as variáveis sejam medidas numa escala pelo menos ordinal.
 
-![A interface do RStudio com a indentificação das principais componentes.](rstudio_layout.png)
+-   **Moda.** A moda representa o valor que aparece mais frequentemente num conjunto de dados. É particularmente útil para identificar o atributo mais comum num conjunto de dados. A moda pode destacar tipos de artefactos dominantes, práticas de enterramento e padrões recorrentes na cultura material. Um conjunto de dados pode ter uma moda (unimodal), várias modas (multimodal) ou ser amodal (sem valores repetidos). Esta estatística só tem significado para variáveis discretas.
 
-#### O R como calculadora
+### Medidas de dispersão
 
-O R pode ser utilizado como uma calculadora simples para operações aritméticas básicas. Pode-se efetuar cálculos como adição, subtração, multiplicação e divisão diretamente na *Console* do R.
+Enquanto as medidas de tendência central iluminam o valor médio ou típico num conjunto de dados, as medidas de dispersão destacam o grau de dispersão ou variabilidade em torno desse valor central. Os conjuntos de dados arqueológicos contêm frequentemente diversos atributos e artefactos, e compreender a sua variabilidade é essencial para tirar conclusões significativas sobre esses mesmos conjuntos.
 
-```{r}
-# Adição
-5 + 3
+Três medidas primárias de dispersão são normalmente utilizadas em Arqueologia:
 
+-   **Intervalo.** O intervalo de variação é a medida de dispersão mais simples. Calcula a diferença entre os valores máximo e mínimo num conjunto de dados. Embora forneça uma estimativa aproximada da variabilidade, pode ser sensível a valores extremos e pode não refletir toda a distribuição. Para calcular o intervalo, subtrai-se o valor mínimo do valor máximo no conjunto de dados.
 
-# Subtração
-10 - 2
+-   **Variância.** A variância quantifica a diferença média ao quadrado entre cada ponto de dados e a média. Ela mede o quanto os valores individuais se desviam da média, fornecendo uma compreensão mais abrangente da dispersão. No entanto, a variância é apresentada em unidades quadradas, o que pode não ser tão intuitivo. Para calcular a variância, encontra-se a média do conjunto de dados e, em seguida, calcula-se a diferença ao quadrado entre cada ponto de dados e a média. Soma-se as diferenças ao quadrado e divide-se pelo número de observações.
 
-# Multiplicação
-4 * 6
+-   **Desvio padrão** O desvio padrão é a raiz quadrada da variância. Expressa a dispersão nas mesmas unidades que os dados originais, tornando-a mais interpretável. O desvio padrão oferece uma representação equilibrada da variabilidade e é frequentemente preferido devido à sua facilidade de compreensão. Para calcular o desvio padrão, calcula-se a raiz quadrada da variância.
 
-# Divisão
-16 / 4
-```
+#### 
 
-##### Estruturas de dados em R
+## Aula 09 - Representação dos resultados - Tabelas {.unnumbered}
 
-Compreender as estruturas de dados em R é essencial, pois determina como os dados são armazenados e manipulados. As principais estruturas de dados incluem:
+##  {.unnumbered}
 
--   *Vectors*: Uma estrutura de dados básica em R, que pode conter elementos do mesmo tipo de dados, como valores numéricos, de caracteres ou lógicos.
+## Aula 10 - Representação gráfica de resultados {.unnumbered}
 
--   *Matrices*: Uma matriz bidimensional com linhas e colunas, contendo elementos do mesmo tipo de dados.
-
--   *Arrays*: Generalização multidimensional de vectores e matrizes.
-
--   *Dataframes*: Uma estrutura bidimensional semelhante a uma tabela em que as colunas podem ser de diferentes tipos de dados. As estruturas de dados são amplamente utilizadas no tratamento e análise de dados do mundo real.
-
-## Aula 08 {.unnumbered}
-
-## Aula 09 {.unnumbered}
-
-## Aula 10 {.unnumbered}
-
-## Aula 11 {.unnumbered}
+## Aula 11 - Inferência estatística {.unnumbered}
 
 ## Aula 12 {.unnumbered}
 
-## Aula 13 {.unnumbered}
+## Aula 13
