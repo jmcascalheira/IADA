@@ -321,7 +321,7 @@ Em contrapartida, existem muitas funções úteis para texto. As mais comuns sã
 
 Também com estas funções é possível combinar duas ou mais funções para alterar ou criar um novo valor. O exemplo abaixo demonstra como podemos extrair um conjunto de caracteres de uma célula e transformá-los em maiúsculas através da combinação das funções LEFT e UPPER do Google Sheets:
 
-![Exemplo de utilização das funções UPPER e LEFT no Google Sheets para obter extrair apenas o tipo de classe de artefacto lítico (i.e., lâmina, lamela) sem indicação da porção analisada (i.e., proximal, distal, mesial).](images/Screenshot 2023-08-09 at 16.52.18.png){width="10cm"}
+![Exemplo de utilização das funções UPPER e LEFT no Google Sheets para obter extrair apenas o tipo de classe de artefacto lítico (i.e., lâmina, lamela) sem indicação da porção analisada (i.e., proximal, distal, mesial).](images/Screenshot%202023-08-09%20at%2016.52.18.png){width="10cm"}
 
 #### Funções de lógica e de pesquisa
 
@@ -343,9 +343,11 @@ No exemplo abaixo, usa-se a função IF para, com base nos valores de compriment
 
 ## Aula 06 - Exercício prático de manipulação de dados {.unnumbered}
 
-## Aula 07 - Análise de variáveis {.unnumbered}
+## Aula 07 - Estatística descritiva {.unnumbered}
 
-Como anteriormente ficou patente, os dados arqueológicos apresentam-se sob várias formas quando registados numa base de dados. De facto, um dos primeiros passos na configuração de um ficheiro que vai receber qualquer tipo de dados é a decisão de que tipo de dados cada coluna irá receber. Em linguagem de base de dados, a divisão dos vários tipos está sobretudo relacionada com a forma como a informação será guardada. No entanto, no momento de analisar essas mesmas variáveis através de métodos aritméticos e estatísticos, a sua classificação obedece a princípios ligeiramente diferentes. Assim, de um ponto de vista estatístico podemos classificar os dados como:
+### Tipos de variáveis estatísticas
+
+Como anteriormente ficou patente, os dados arqueológicos apresentam-se sob várias formas quando registados numa base de dados. Em linguagem de base de dados, a divisão dos vários tipos está sobretudo relacionada com a forma como a informação será guardada. No entanto, no momento de analisar essas mesmas variáveis através de métodos aritméticos e estatísticos, a sua classificação obedece a princípios ligeiramente diferentes. Assim, de um ponto de vista estatístico podemos classificar os dados como:
 
 -   **Dados qualitativos (ou não numéricos, ou categóricos)**. Os dados qualitativos captam informação categórica sem valores numéricos. Estes dados são frequentemente expressos através de etiquetas, códigos ou categorias. Exemplos incluem tipos de artefactos, práticas de enterramento, tipos de povoamento e estilos de cerâmica. Os dados qualitativos podem ainda ser classificados com base nas suas características:
 
@@ -370,6 +372,98 @@ Por outro lado, as variáveis podem ser organizadas segundo a escala de medida. 
 -   **Escala de razão.** Os dados da escala de razão não só têm intervalos uniformes como também apresentam um verdadeiro ponto zero. Os exemplos incluem contagens de artefactos, pesos de artefactos, ou distâncias entre sítios arqueológicos. As escalas de proporção permitem proporções significativas e várias operações matemáticas, como a adição, a subtração, a multiplicação e a divisão.
 
 O tipo de dados corresponde directamente à escala de medida. Por exemplo, os dados qualitativos alinham-se frequentemente com escalas nominais ou ordinais, enquanto que os dados quantitativos alinham-se tipicamente com escalas de intervalos ou rácios.
+
+### Análise univariada
+
+Uma vez elaborada uma tabela ou tabelas de dados, toda a informação está lá, mas os padrões que caracterização aquele conjunto ainda não são totalmente claros para nós. Normalmente, não estamos interessados nas características de cada peça individual, mas no conjunto do material como um todo. Quando fazemos perguntas como "Quão comuns são os diferentes tipos de matérias primas numa colecção de artefactos líticos?" "As lascas dessa colecção têm um tamanho normalizado?", as respostas não estão imediatamente disponíveis na base de dados. Precisamos de resumir os nossos dados (os valores das nossas variáveis) de alguma forma, seja através de tabelas, gráficos ou de números que resumem a tendência, tendo sempre em consideração as características de medição das nossas variáveis.
+
+#### Variáveis qualitativas
+
+##### Tabelas de frequência
+
+As tabelas de frequência são um óptimo ponto de partida para resumir dados. Estas podem ser utilizadas para mostrar dados quantitativos mas sobretudo qualitativos, e mostram a frequência com que cada valor ocorre no conjunto.
+
+A apresentação de dados qualitativos numa tabela de frequências é bastante simples, uma vez que já existem categorias claramente definidas. Por exemplo, se quisermos mostrar qual a frequência das várias matérias primas numa colecção de ferramentas em pedra, podemos muito facilmente criar uma tabela como a abaixo apresentada.
+
++---------------+----------------------------+
+| Matéria Prima | Frequência absoluta (ou N) |
++===============+============================+
+| Grauvaque     | 20                         |
++---------------+----------------------------+
+| Outra         | 7                          |
++---------------+----------------------------+
+| Quartzo       | 29                         |
++---------------+----------------------------+
+| Sílex         | 138                        |
++---------------+----------------------------+
+| Xisto         | 1                          |
++---------------+----------------------------+
+| Total         | 195                        |
++---------------+----------------------------+
+
+Este tipo de frequência denomina-se de frequência absoluta, uma vez que representa o número real de itens analisados para cada categoria. Representa a contagem em bruto sem qualquer consideração pela dimensão global do conjunto de dados ou pelo contexto.
+
+As frequências relativas, por outro lado, têm em conta a proporção ou percentagem de ocorrências de um atributo específico em relação ao número total de ocorrências ou a um subconjunto específico de ocorrências. Proporcionam uma perspectiva sobre a importância de um atributo no contexto de todo o conjunto de dados. Para calcular a frequência relativa, divide-se a frequência absoluta de um atributo específico pelo número total de ocorrências no conjunto de dados ou subconjunto. Isto permite-lhe comparar a importância de diferentes atributos em diferentes conjuntos, mesmo que os tamanhos dos conjuntos de dados não sejam os mesmos. As frequências relativas podem ser escritas como fracções, percentagens ou números decimais.
+
++--------------------------------------+-------------------------------------+-------------------------------+
+| Matéria Prima                        | Frequência absoluta (ou N)          | Frequência relativa           |
++======================================+=====================================+===============================+
+| Grauvaque                            | 20                                  | 10.26%                        |
++--------------------------------------+-------------------------------------+-------------------------------+
+| Outra                                | 7                                   | 3.59%                         |
++--------------------------------------+-------------------------------------+-------------------------------+
+| Quartzo                              | 29                                  | 14.87%                        |
++--------------------------------------+-------------------------------------+-------------------------------+
+| Sílex                                | 138                                 | 70.77%                        |
++--------------------------------------+-------------------------------------+-------------------------------+
+| Xisto                                | 1                                   | 0.51%                         |
++--------------------------------------+-------------------------------------+-------------------------------+
+| Total                                | 195                                 | 100.00%                       |
++--------------------------------------+-------------------------------------+-------------------------------+
+
+Finalmente, existe ainda um terceiro tipo de frequências que é comummente utilizado em Arqueologia, que são as frequências relativas acumuladas. Trata-se da acumulação das frequências relativas anteriores. Para encontrar as frequências relativas acumuladas, adicione todas as frequências relativas anteriores à frequência relativa da linha atual, como mostra o exemplo abaixo.
+
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Matéria Prima            | Frequência absoluta (ou N) | Frequência relativa | Frequência relativa acumulada |
++==========================+============================+=====================+===============================+
+| Grauvaque                | 20                         | 10.26%              | 10.26%                        |
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Outra                    | 7                          | 3.59%               | 13.85%                        |
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Quartzo                  | 29                         | 14.87%              | 28.72%                        |
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Sílex                    | 138                        | 70.77%              | 99.49%                        |
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Xisto                    | 1                          | 0.51%               | 100.00%                       |
++--------------------------+----------------------------+---------------------+-------------------------------+
+| Total                    | 195                        | 100.00%             |                               |
++--------------------------+----------------------------+---------------------+-------------------------------+
+
+::: callout-tip
+A criação deste e outros tipos de tabelas no Google Sheets é relativamente simples, graças à ferramenta de tabelas dinâmicas, ou *Pivot Tables*. As tabelas dinâmicas fornecem uma forma de resumir os dados na folha de cálculo, agregando, ordenando, contando ou calculando automaticamente a média dos dados enquanto apresenta os resultados resumidos numa nova tabela. Uma tabela dinâmica funciona como uma espécie de consulta a uma base de dados.
+
+As tabelas dinâmicas são compostas por colunas, linhas, páginas e campos de dados que podem ser deslocados, ajudando-o a isolar, agrupar, expandir e somar os seus dados em tempo real.
+:::
+
+As tabelas são uma boa forma de organizar e apresentar dados. Mas os gráficos podem ser ainda mais úteis para compreender os dados. Não existem regras rígidas relativamente aos gráficos a utilizar. Dois gráficos que são utilizados para apresentar dados qualitativos são os gráficos circulares e os gráficos de barras.
+
+##### Gráficos circulares
+
+Num gráfico circular, as categorias de dados são representadas por cunhas num círculo e são proporcionais em tamanho à percentagem (frequência relativa) de indivíduos em cada categoria. Utilizando o exemplo dado nas tabelas anteriores, a figura abaixo representa os mesmos dados através de um gráfico circular.
+
+![](images/Matéria Prima.svg)
+
+##### Gráficos de barras
+
+Os gráficos de barras são compostos por barras separadas umas das outras. O comprimento da barra para cada categoria é proporcional ao número ou percentagem de indivíduos em cada categoria. As barras podem ser rectângulos ou caixas rectangulares (utilizadas em gráficos tridimensionais), e podem ser verticais ou horizontais. O gráfico de barras apresentado na figura abaixo tem os grupos etários representados no eixo dos X e as proporções no eixo dos Y.
+
+![](images/barplot_N.svg)
+
+![](images/barplot_freq.svg)
+
+#### Variáveis quantitativas
+
+##### Tabelas
 
 ### Medidas de tendência central
 
@@ -399,7 +493,7 @@ Três medidas primárias de dispersão são normalmente utilizadas em Arqueologi
 
 -   **Desvio padrão** O desvio padrão é a raiz quadrada da variância. Expressa a dispersão nas mesmas unidades que os dados originais, tornando-a mais interpretável. O desvio padrão oferece uma representação equilibrada da variabilidade e é frequentemente preferido devido à sua facilidade de compreensão. Para calcular o desvio padrão, calcula-se a raiz quadrada da variância.
 
-#### 
+### Análise bivariada
 
 ## Aula 09 - Representação dos resultados - Tabelas {.unnumbered}
 
