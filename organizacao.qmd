@@ -385,59 +385,45 @@ As tabelas de frequência são um óptimo ponto de partida para resumir dados. E
 
 A apresentação de dados qualitativos numa tabela de frequências é bastante simples, uma vez que já existem categorias claramente definidas. Por exemplo, se quisermos mostrar qual a frequência das várias matérias primas numa colecção de ferramentas em pedra, podemos muito facilmente criar uma tabela como a abaixo apresentada.
 
-+---------------+----------------------------+
 | Matéria Prima | Frequência absoluta (ou N) |
-+===============+============================+
+|---------------|----------------------------|
 | Grauvaque     | 20                         |
-+---------------+----------------------------+
 | Outra         | 7                          |
-+---------------+----------------------------+
 | Quartzo       | 29                         |
-+---------------+----------------------------+
 | Sílex         | 138                        |
-+---------------+----------------------------+
 | Xisto         | 1                          |
-+---------------+----------------------------+
 | Total         | 195                        |
-+---------------+----------------------------+
 
 Este tipo de frequência denomina-se de frequência absoluta, uma vez que representa o número real de itens analisados para cada categoria. Representa a contagem em bruto sem qualquer consideração pela dimensão global do conjunto de dados ou pelo contexto.
 
 As frequências relativas, por outro lado, têm em conta a proporção ou percentagem de ocorrências de um atributo específico em relação ao número total de ocorrências ou a um subconjunto específico de ocorrências. Proporcionam uma perspectiva sobre a importância de um atributo no contexto de todo o conjunto de dados. Para calcular a frequência relativa, divide-se a frequência absoluta de um atributo específico pelo número total de ocorrências no conjunto de dados ou subconjunto. Isto permite-lhe comparar a importância de diferentes atributos em diferentes conjuntos, mesmo que os tamanhos dos conjuntos de dados não sejam os mesmos. As frequências relativas podem ser escritas como fracções, percentagens ou números decimais.
 
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Matéria Prima                        | Frequência absoluta (ou N)          | Frequência relativa           |
-+======================================+=====================================+===============================+
-| Grauvaque                            | 20                                  | 10.26%                        |
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Outra                                | 7                                   | 3.59%                         |
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Quartzo                              | 29                                  | 14.87%                        |
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Sílex                                | 138                                 | 70.77%                        |
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Xisto                                | 1                                   | 0.51%                         |
-+--------------------------------------+-------------------------------------+-------------------------------+
-| Total                                | 195                                 | 100.00%                       |
-+--------------------------------------+-------------------------------------+-------------------------------+
+| Matéria Prima | Frequência absoluta (ou N) | Frequência relativa |
+|---------------|----------------------------|---------------------|
+| Grauvaque     | 20                         | 10.26%              |
+| Outra         | 7                          | 3.59%               |
+| Quartzo       | 29                         | 14.87%              |
+| Sílex         | 138                        | 70.77%              |
+| Xisto         | 1                          | 0.51%               |
+| Total         | 195                        | 100.00%             |
 
 Finalmente, existe ainda um terceiro tipo de frequências que é comummente utilizado em Arqueologia, que são as frequências relativas acumuladas. Trata-se da acumulação das frequências relativas anteriores. Para encontrar as frequências relativas acumuladas, adicione todas as frequências relativas anteriores à frequência relativa da linha atual, como mostra o exemplo abaixo.
 
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Matéria Prima            | Frequência absoluta (ou N) | Frequência relativa | Frequência relativa acumulada |
-+==========================+============================+=====================+===============================+
-| Grauvaque                | 20                         | 10.26%              | 10.26%                        |
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Outra                    | 7                          | 3.59%               | 13.85%                        |
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Quartzo                  | 29                         | 14.87%              | 28.72%                        |
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Sílex                    | 138                        | 70.77%              | 99.49%                        |
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Xisto                    | 1                          | 0.51%               | 100.00%                       |
-+--------------------------+----------------------------+---------------------+-------------------------------+
-| Total                    | 195                        | 100.00%             |                               |
-+--------------------------+----------------------------+---------------------+-------------------------------+
++---------------+----------------------------+---------------------+-------------------------------+
+| Matéria Prima | Frequência absoluta (ou N) | Frequência relativa | Frequência relativa acumulada |
++===============+============================+=====================+===============================+
+| Grauvaque     | 20                         | 10.26%              | 10.26%                        |
++---------------+----------------------------+---------------------+-------------------------------+
+| Outra         | 7                          | 3.59%               | 13.85%                        |
++---------------+----------------------------+---------------------+-------------------------------+
+| Quartzo       | 29                         | 14.87%              | 28.72%                        |
++---------------+----------------------------+---------------------+-------------------------------+
+| Sílex         | 138                        | 70.77%              | 99.49%                        |
++---------------+----------------------------+---------------------+-------------------------------+
+| Xisto         | 1                          | 0.51%               | 100.00%                       |
++---------------+----------------------------+---------------------+-------------------------------+
+| Total         | 195                        | 100.00%             |                               |
++---------------+----------------------------+---------------------+-------------------------------+
 
 ::: callout-tip
 A criação deste e outros tipos de tabelas no Google Sheets é relativamente simples, graças à ferramenta de tabelas dinâmicas, ou *Pivot Tables*. As tabelas dinâmicas fornecem uma forma de resumir os dados na folha de cálculo, agregando, ordenando, contando ou calculando automaticamente a média dos dados enquanto apresenta os resultados resumidos numa nova tabela. Uma tabela dinâmica funciona como uma espécie de consulta a uma base de dados.
@@ -451,7 +437,7 @@ As tabelas são uma boa forma de organizar e apresentar dados. Mas os gráficos 
 
 Num gráfico circular, as categorias de dados são representadas por cunhas num círculo e são proporcionais em tamanho à percentagem (frequência relativa) de indivíduos em cada categoria. Utilizando o exemplo dado nas tabelas anteriores, a figura abaixo representa os mesmos dados através de um gráfico circular.
 
-![](images/Matéria Prima.svg)
+##### ![](images/Matéria%20Prima.svg)
 
 ##### Gráficos de barras
 
@@ -463,11 +449,29 @@ Os gráficos de barras são compostos por barras separadas umas das outras. O co
 
 #### Variáveis quantitativas
 
-##### Tabelas
+As opções descritivas para dados quantitativos são muito mais robustas do que para dados categóricos. A principal razão é porque os dados quantitativos podem ser sujeitos a um vasto leque de operações matemáticas e análises estatísticas, permitindo uma visão mais profunda dos padrões, relações e tendências. Os dados categóricos, sendo não numéricos, são mais limitados em termos das operações matemáticas que podem ser efectuadas. Ao descrever uma variável quantitativa, queremos observar pelo menos 4 coisas: a forma da sua distribuição, a presença de valores anómalos ou *outliers*, as medidas de tendência central, e as medidas de dispersão. Para cada uma destas existem elementos gráficos e em forma de tabela exclusivamente dedicados à análise univariada.
 
-### Medidas de tendência central
+##### Forma da distribuição
 
-As medidas de tendência central usam um único valor representativo num conjunto de dados que indique o seu centro. Estas medidas fornecem um resumo conciso da distribuição e destacam o valor típico que reflecte a essência dos dados. Em Arqueologia, as medidas de tendência central ajudam-nos a discernir padrões, a fazer comparações e a tirar conclusões sobre um conjunto de dados.
+A forma é a principal caraterística que podemos determinar ao olhar para um gráfico. A forma de uma distribuição é a primeira coisa que devemos observar, uma vez que muitas vezes ditará como proceder com o resto da análise. A maioria dos métodos gráficos pode dar-nos uma ideia da forma de uma distribuição, mas o melhor na maioria das situações é um histograma corretamente formatado.
+
+##### *Outliers*
+
+Por vezes, um ou mais pontos de dados que se destacam visualmente. Estes valores extremos podem ser potencialmente anómalos. Por vezes, podem ser óbvios para nós, como no histograma seguinte.
+
+![](images/histogram_outliers.svg)
+
+A análise de dados para detetar *outliers* serve muitos objectivos, incluindo:
+
+-   Identificar a assimetria na distribuição.
+
+-   Identificar possíveis erros de recolha ou introdução de dados.
+
+-   Fornecer informações sobre propriedades interessantes dos dados.
+
+##### Medidas de tendência central
+
+As medidas de tendência central usam um único valor representativo num conjunto de dados. Estas medidas fornecem um resumo conciso da distribuição e destacam o valor típico que reflecte a essência dos dados. Em Arqueologia, as medidas de tendência central ajudam-nos a discernir padrões, a fazer comparações e a tirar conclusões sobre um conjunto de dados.
 
 Três medidas de tendência central são principalmente utilizadas:
 
@@ -477,11 +481,11 @@ Três medidas de tendência central são principalmente utilizadas:
     Média = Soma dos valores / Número de observações
     ```
 
--   **Mediana.** A mediana é o valor intermédio num conjunto de dados quando este é organizado por ordem ascendente ou descendente. É menos afetada por valores extremos e fornece uma estimativa robusta da tendência central. Para calcular a mediana, organizam-se os dados em ordem crescente e encontra-se o valor localizado a meio da distribuição, para 50% das observações sejam superiores ou iguais à medias e 50% sejam inferiores ou iguais à mediana. Se o conjunto de dados tiver um número par de observações, a mediana é a média dos dois valores intermédios. A mediana não é influenciada por valores extremos e o seu cálculo exige que as variáveis sejam medidas numa escala pelo menos ordinal.
+-   **Mediana.** A mediana é o valor intermédio num conjunto de dados quando este é organizado por ordem ascendente ou descendente. É menos afectada por valores extremos e fornece uma estimativa robusta da tendência central. Para calcular a mediana, organizam-se os dados em ordem crescente e encontra-se o valor localizado a meio da distribuição, para 50% das observações sejam superiores ou iguais à medias e 50% sejam inferiores ou iguais à mediana. Se o conjunto de dados tiver um número par de observações, a mediana é a média dos dois valores intermédios. A mediana não é influenciada por valores extremos e o seu cálculo exige que as variáveis sejam medidas numa escala pelo menos ordinal.
 
 -   **Moda.** A moda representa o valor que aparece mais frequentemente num conjunto de dados. É particularmente útil para identificar o atributo mais comum num conjunto de dados. A moda pode destacar tipos de artefactos dominantes, práticas de enterramento e padrões recorrentes na cultura material. Um conjunto de dados pode ter uma moda (unimodal), várias modas (multimodal) ou ser amodal (sem valores repetidos). Esta estatística só tem significado para variáveis discretas.
 
-### Medidas de dispersão
+##### Medidas de dispersão
 
 Enquanto as medidas de tendência central iluminam o valor médio ou típico num conjunto de dados, as medidas de dispersão destacam o grau de dispersão ou variabilidade em torno desse valor central. Os conjuntos de dados arqueológicos contêm frequentemente diversos atributos e artefactos, e compreender a sua variabilidade é essencial para tirar conclusões significativas sobre esses mesmos conjuntos.
 
@@ -493,16 +497,14 @@ Três medidas primárias de dispersão são normalmente utilizadas em Arqueologi
 
 -   **Desvio padrão** O desvio padrão é a raiz quadrada da variância. Expressa a dispersão nas mesmas unidades que os dados originais, tornando-a mais interpretável. O desvio padrão oferece uma representação equilibrada da variabilidade e é frequentemente preferido devido à sua facilidade de compreensão. Para calcular o desvio padrão, calcula-se a raiz quadrada da variância.
 
-### Análise bivariada
+## Aula 08 - Análise bivariada {.unnumbered}
 
-## Aula 09 - Representação dos resultados - Tabelas {.unnumbered}
+## Aula 09 - Introdução ao R {.unnumbered}
 
-##  {.unnumbered}
+## Aula 10 - Visualização em R (Parte 1) {.unnumbered}
 
-## Aula 10 - Representação gráfica de resultados {.unnumbered}
+## Aula 11 - Visualização em R (Parte 2) {.unnumbered}
 
-## Aula 11 - Inferência estatística {.unnumbered}
+## Aula 12 - Exercício prático em R
 
-## Aula 12 {.unnumbered}
-
-## Aula 13
+## Aula 13 - Exercício final

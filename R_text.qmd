@@ -38,7 +38,7 @@ O RStudio é um ambiente de desenvolvimento integrado concebido especificamente 
 
 -   *Files/Plots/Packages/Help/Viewer*: Este painel polivalente mostra-lhe o conteúdo dos directórios no seu computador. Também pode usar o separador *Files* para navegar e definir o diretório de trabalho. O separador *Plots* mostra a saída de quaisquer gráficos gerados. Em *Packages* verá os pacotes que estão ativamente carregados ou pode anexar pacotes instalados. "Help" mostra os ficheiros de ajuda para as funções e pacotes do R. O separador *Viewer* permite-lhe ver o conteúdo local da Web (por exemplo, resultados HTML).
 
-![A interface do RStudio com a indentificação das principais componentes.](images/rstudio_layout.png){alt="A interface do RStudio com a indentificação das principais componentes."}
+![A interface do RStudio com a indentificação das principais componentes.](images/rstudio_layout.png)
 
 ##### O R como calculadora
 
@@ -81,3 +81,23 @@ print(X)
 -   *Arrays*: Generalização multidimensional de vectores e matrizes.
 
 -   *Dataframes*: Uma estrutura bidimensional semelhante a uma tabela em que as colunas podem ser de diferentes tipos de dados. As estruturas de dados são amplamente utilizadas no tratamento e análise de dados do mundo real.
+
+### Pacotes R e o *Tidyverse* 
+
+Antes de começar a executar a analisar alguns dados teremos também que instalar alguns pacotes do R. Um pacote R é uma colecção de funções, dados e documentação que amplia as capacidades da linguagem R. A utilização de pacotes é fundamental para o sucesso da utilização do programa. A maioria dos pacotes necessários para esta aula fazem parte do chamado *Tidyverse*. Todos os pacotes do *Tidyverse* partilham uma filosofia comum de dados e programação em R e foram concebidos para trabalhar em conjunto.
+
+Instala-se o *Tidyverse* completo com uma única linha de código:
+
+```{r}
+install.packages("tidyverse")
+```
+
+Após premir *Enter* para a executar esta linha de código, o R descarregará os pacotes do CRAN ([The Comprehensive R Archive Network](https://cran.r-project.org/)) e instalá-los-á no computador. Este passo só necessita ser feito uma única vez em cada computador.
+
+Não poderão ser utilizadas as funções, objectos ou ficheiros de ajuda de um pacote até que o carregue com library(). Depois de instalado um pacote, pode-se carregá-lo utilizando a função library()
+
+```{r}
+library(tidyverse)
+```
+
+Existem muitos outros pacotes excelentes que não fazem parte do *Tidyverse* porque resolvem problemas num domínio diferente ou são concebidos com um conjunto diferente de princípios subjacentes. Isto não os torna melhores ou piores; apenas os torna diferentes. À medida que se desenvolvem competências em R e mais projectos de análises de dados se iniciarem, mais se aprender sobre novos pacotes R e novas formas de pensar sobre os dados.

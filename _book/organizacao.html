@@ -225,14 +225,12 @@ div.csl-indent {
   <li><a href="#análise-univariada" id="toc-análise-univariada" class="nav-link" data-scroll-target="#análise-univariada"><span class="header-section-number">4.2.6</span> Análise univariada</a></li>
   <li><a href="#medidas-de-tendência-central" id="toc-medidas-de-tendência-central" class="nav-link" data-scroll-target="#medidas-de-tendência-central"><span class="header-section-number">4.2.7</span> Medidas de tendência central</a></li>
   <li><a href="#medidas-de-dispersão" id="toc-medidas-de-dispersão" class="nav-link" data-scroll-target="#medidas-de-dispersão"><span class="header-section-number">4.2.8</span> Medidas de dispersão</a></li>
-  <li><a href="#análise-bivariada" id="toc-análise-bivariada" class="nav-link" data-scroll-target="#análise-bivariada"><span class="header-section-number">4.2.9</span> Análise bivariada</a></li>
   </ul></li>
-  <li><a href="#aula-09---representação-dos-resultados---tabelas" id="toc-aula-09---representação-dos-resultados---tabelas" class="nav-link" data-scroll-target="#aula-09---representação-dos-resultados---tabelas">Aula 09 - Representação dos resultados - Tabelas</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#aula-10---representação-gráfica-de-resultados" id="toc-aula-10---representação-gráfica-de-resultados" class="nav-link" data-scroll-target="#aula-10---representação-gráfica-de-resultados">Aula 10 - Representação gráfica de resultados</a></li>
-  <li><a href="#aula-11---inferência-estatística" id="toc-aula-11---inferência-estatística" class="nav-link" data-scroll-target="#aula-11---inferência-estatística">Aula 11 - Inferência estatística</a></li>
-  <li><a href="#aula-12" id="toc-aula-12" class="nav-link" data-scroll-target="#aula-12">Aula 12</a></li>
-  <li><a href="#aula-13" id="toc-aula-13" class="nav-link" data-scroll-target="#aula-13"><span class="header-section-number">4.3</span> Aula 13</a></li>
+  <li><a href="#aula-08---análise-bivariada" id="toc-aula-08---análise-bivariada" class="nav-link" data-scroll-target="#aula-08---análise-bivariada">Aula 08 - Análise bivariada</a></li>
+  <li><a href="#aula-09---aula-07---análise-de-dados-em-r" id="toc-aula-09---aula-07---análise-de-dados-em-r" class="nav-link" data-scroll-target="#aula-09---aula-07---análise-de-dados-em-r">Aula 09 - Aula 07 - Análise de dados em R</a></li>
+  <li><a href="#aula-10---inferência-estatística" id="toc-aula-10---inferência-estatística" class="nav-link" data-scroll-target="#aula-10---inferência-estatística">Aula 10 - Inferência estatística</a></li>
+  <li><a href="#aula-11" id="toc-aula-11" class="nav-link" data-scroll-target="#aula-11">Aula 11</a></li>
+  <li><a href="#aula-12" id="toc-aula-12" class="nav-link" data-scroll-target="#aula-12"><span class="header-section-number">4.3</span> Aula 12</a></li>
   </ul>
 </nav>
     </div>
@@ -622,10 +620,6 @@ PROMPT=WEIGHT</code></pre>
 <p>As tabelas de frequência são um óptimo ponto de partida para resumir dados. Estas podem ser utilizadas para mostrar dados quantitativos mas sobretudo qualitativos, e mostram a frequência com que cada valor ocorre no conjunto.</p>
 <p>A apresentação de dados qualitativos numa tabela de frequências é bastante simples, uma vez que já existem categorias claramente definidas. Por exemplo, se quisermos mostrar qual a frequência das várias matérias primas numa colecção de ferramentas em pedra, podemos muito facilmente criar uma tabela como a abaixo apresentada.</p>
 <table class="table">
-<colgroup>
-<col style="width: 22%">
-<col style="width: 40%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Matéria Prima</th>
@@ -662,11 +656,6 @@ PROMPT=WEIGHT</code></pre>
 <p>Este tipo de frequência denomina-se de frequência absoluta, uma vez que representa o número real de itens analisados para cada categoria. Representa a contagem em bruto sem qualquer consideração pela dimensão global do conjunto de dados ou pelo contexto.</p>
 <p>As frequências relativas, por outro lado, têm em conta a proporção ou percentagem de ocorrências de um atributo específico em relação ao número total de ocorrências ou a um subconjunto específico de ocorrências. Proporcionam uma perspectiva sobre a importância de um atributo no contexto de todo o conjunto de dados. Para calcular a frequência relativa, divide-se a frequência absoluta de um atributo específico pelo número total de ocorrências no conjunto de dados ou subconjunto. Isto permite-lhe comparar a importância de diferentes atributos em diferentes conjuntos, mesmo que os tamanhos dos conjuntos de dados não sejam os mesmos. As frequências relativas podem ser escritas como fracções, percentagens ou números decimais.</p>
 <table class="table">
-<colgroup>
-<col style="width: 35%">
-<col style="width: 34%">
-<col style="width: 29%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Matéria Prima</th>
@@ -710,10 +699,10 @@ PROMPT=WEIGHT</code></pre>
 <p>Finalmente, existe ainda um terceiro tipo de frequências que é comummente utilizado em Arqueologia, que são as frequências relativas acumuladas. Trata-se da acumulação das frequências relativas anteriores. Para encontrar as frequências relativas acumuladas, adicione todas as frequências relativas anteriores à frequência relativa da linha atual, como mostra o exemplo abaixo.</p>
 <table class="table">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 25%">
-<col style="width: 19%">
+<col style="width: 15%">
 <col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 31%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -781,13 +770,23 @@ Tip
 <section id="gráficos-circulares" class="level5" data-number="4.2.6.1.2">
 <h5 data-number="4.2.6.1.2" class="anchored" data-anchor-id="gráficos-circulares"><span class="header-section-number">4.2.6.1.2</span> Gráficos circulares</h5>
 <p>Num gráfico circular, as categorias de dados são representadas por cunhas num círculo e são proporcionais em tamanho à percentagem (frequência relativa) de indivíduos em cada categoria. Utilizando o exemplo dado nas tabelas anteriores, a figura abaixo representa os mesmos dados através de um gráfico circular.</p>
-<p><img src="images/Matéria Prima.svg" class="img-fluid"></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="organizacao_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 </section>
 <section id="gráficos-de-barras" class="level5" data-number="4.2.6.1.3">
 <h5 data-number="4.2.6.1.3" class="anchored" data-anchor-id="gráficos-de-barras"><span class="header-section-number">4.2.6.1.3</span> Gráficos de barras</h5>
 <p>Os gráficos de barras são compostos por barras separadas umas das outras. O comprimento da barra para cada categoria é proporcional ao número ou percentagem de indivíduos em cada categoria. As barras podem ser rectângulos ou caixas rectangulares (utilizadas em gráficos tridimensionais), e podem ser verticais ou horizontais. O gráfico de barras apresentado na figura abaixo tem os grupos etários representados no eixo dos X e as proporções no eixo dos Y.</p>
 <p><img src="images/barplot_N.svg" class="img-fluid"></p>
 <p><img src="images/barplot_freq.svg" class="img-fluid"></p>
+</section>
+</section>
+<section id="variáveis-quantitativas" class="level4" data-number="4.2.6.2">
+<h4 data-number="4.2.6.2" class="anchored" data-anchor-id="variáveis-quantitativas"><span class="header-section-number">4.2.6.2</span> Variáveis quantitativas</h4>
+<section id="tabelas" class="level5" data-number="4.2.6.2.1">
+<h5 data-number="4.2.6.2.1" class="anchored" data-anchor-id="tabelas"><span class="header-section-number">4.2.6.2.1</span> Tabelas</h5>
 </section>
 </section>
 </section>
@@ -812,27 +811,21 @@ Tip
 <li><p><strong>Desvio padrão</strong> O desvio padrão é a raiz quadrada da variância. Expressa a dispersão nas mesmas unidades que os dados originais, tornando-a mais interpretável. O desvio padrão oferece uma representação equilibrada da variabilidade e é frequentemente preferido devido à sua facilidade de compreensão. Para calcular o desvio padrão, calcula-se a raiz quadrada da variância.</p></li>
 </ul>
 </section>
-<section id="análise-bivariada" class="level3" data-number="4.2.9">
-<h3 data-number="4.2.9" class="anchored" data-anchor-id="análise-bivariada"><span class="header-section-number">4.2.9</span> Análise bivariada</h3>
 </section>
+<section id="aula-08---análise-bivariada" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="aula-08---análise-bivariada">Aula 08 - Análise bivariada</h2>
 </section>
-<section id="aula-09---representação-dos-resultados---tabelas" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="aula-09---representação-dos-resultados---tabelas">Aula 09 - Representação dos resultados - Tabelas</h2>
+<section id="aula-09---aula-07---análise-de-dados-em-r" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="aula-09---aula-07---análise-de-dados-em-r">Aula 09 - Aula 07 - Análise de dados em R</h2>
 </section>
-<section id="section" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="section"></h2>
+<section id="aula-10---inferência-estatística" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="aula-10---inferência-estatística">Aula 10 - Inferência estatística</h2>
 </section>
-<section id="aula-10---representação-gráfica-de-resultados" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="aula-10---representação-gráfica-de-resultados">Aula 10 - Representação gráfica de resultados</h2>
+<section id="aula-11" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="aula-11">Aula 11</h2>
 </section>
-<section id="aula-11---inferência-estatística" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="aula-11---inferência-estatística">Aula 11 - Inferência estatística</h2>
-</section>
-<section id="aula-12" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="aula-12">Aula 12</h2>
-</section>
-<section id="aula-13" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="aula-13"><span class="header-section-number">4.3</span> Aula 13</h2>
+<section id="aula-12" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="aula-12"><span class="header-section-number">4.3</span> Aula 12</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
