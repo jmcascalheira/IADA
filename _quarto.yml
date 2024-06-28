@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _book
 
 crossref:
   fig-title: Fig.
@@ -8,22 +9,52 @@ crossref:
   tbl-prefix: Tabela
   tbl-title: Tabela
 
-number-sections: true
-
 book:
   title: "Introdução à Análise de Dados em Arqueologia"
-  subtitle: "João Cascalheira"
-  author: ""
-  date: ""
-  downloads: [pdf, epub]
-  sharing: [twitter, facebook]
+
+  page-footer:
+    left: |
+      Introdução à Análise de Dados em Arqueologia foi escrito por João Cascalheira.
+    right: |
+      Este livro foi construido com <a href="https://quarto.org/">Quarto</a>.
   cover-image: cover.png
+  favicon: cover.png
+  repo-url: https://github.com/jmcascalheira/IADA
+  repo-branch: main
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - apresentacao.qmd
-    - IADA.qmd
-    - estrutura.qmd
-    - organizacao.qmd
+    
+    - preambulo.qmd
+    - introducao.qmd
+    
+    - part: "Dados e Bases de Dados"
+      chapters:
+        - basesdados.qmd
+        - tiposdedados.qmd
+        
+    - part: "Recolha de dados"
+      chapters:
+        - recolha.qmd
+        - E5.qmd
+    
+    - part: "Transformação de dados"
+      chapters:
+        - formatar.qmd
+        - operadores.qmd
+    
+    - part: "Estatística descritiva univariada"
+      chapters:
+        - tiposvariaveis.qmd
+        - qualitativas.qmd
+        - quantitativas.qmd
+
+    - part: "Estatística descritiva bivariada"
+      chapters:
+        - duascategoricas.qmd
+        - umacatumanum.qmd
+        - duasnumericas.qmd
+
     - referencias.qmd
     - anexos.qmd
 
@@ -31,9 +62,12 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    theme: 
+      - cosmo
+      - 4rds.scss
+    code-link: true
+    
+    author-meta: "João Cascalheira"
+    callout-appearence: simple
 
 editor: visual
-

@@ -1,0 +1,7 @@
+# **Usar operadores e funções para transformação de dados**
+
+## **Dados em formato numérico**
+
+### **Dados em formato de texto**
+
+### **Funções de lógica e de pesquisa**

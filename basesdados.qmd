@@ -1,0 +1,7 @@
+# Tipos de bases de dados
+
+## Folhas de cálculo
+
+## Bases de dados relacionais
+
+## Bases de dados espaciais
