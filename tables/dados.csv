@@ -1,0 +1,18 @@
+Tipo de dados,Descrição
+"Texto
+Texto Breve","Valores curtos e alfanuméricos, tais como um apelido ou um endereço"
+"Número, Número Grande","Valores numéricos, como distâncias"
+Percentagem,Percentagens
+Científico,Aceita numeração científica
+Moeda,Valores monetários
+Sim/Não,Também conhecido como lógico ou booleano. Os valores Sim e Não e os campos que contêm apenas um de dois valores
+"Data/Hora
+Data/Hora Prolongada","Data/Hora: valores de data e hora dos anos 100 a 9999.
+Data/Hora Prolongada: valores de data e hora dos anos 1 a 9999"
+Rich Text,Texto ou combinações de texto e números que podem ser formatados ao utilizar controlos de cor e de tipo de letra
+Campo Calculado,Resultados de um cálculo. O cálculo tem de fazer referência a outros campos da mesma tabela
+Anexo,"Imagens, ficheiros de folha de cálculo, documentos, gráficos e outros tipos de ficheiros suportados anexados aos registos na base de dados, semelhante à forma de anexar ficheiros a mensagens de email"
+Hiperligação,Texto ou combinações de texto e números armazenados como texto e utilizados como um endereço de hiperligação
+"Memo
+Texto Longo",Longos blocos de texto. Uma utilização típica de um campo Memo seria uma descrição detalhada do produto
+Pesquisa,Lista de valores obtida de uma tabela ou consulta ou apresenta um conjunto de valores especificados na criação do campo.

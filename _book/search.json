@@ -212,5 +212,16 @@
     "crumbs": [
       "Bibliografia"
     ]
+  },
+  {
+    "objectID": "tiposdedados.html",
+    "href": "tiposdedados.html",
+    "title": "\n3  Tipos de dados\n",
+    "section": "",
+    "text": "Todos os formatos de bases de dados permitem a definição de diversos tipos de dados. A seleção do tipo de dados deve ser realizada conforme a natureza da informação que se pretende armazenar nesse campo específico. Devemos optar pelos tipos de dados que melhor se adaptam à informação que pretendemos armazenar/guardar. O tipo de dados escolhido determina a natureza dos dados que podem ser armazenados, o intervalo de valores que podem assumir e as operações que podem ser efectuadas sobre os mesmos. Por vezes, confundem-se os tipos de dados que podem ser selecionados numa base de dados com os tipos de variáveis estatísticas. Embora relacionados, no caso das bases de dados, são tidas em consideração principalmente as operações de armazenamento e transformação, resultando numa maior variedade de tipos em comparação com as variáveis estatísticas. Na Tabela 3.1, são apresentados os principais exemplos dos tipos de dados.\n\n\n\nTabela 3.1: Principais tipos de dados que definem os valores que uma coluna de uma base de dados pode conter.\n\n\n\n\n\n\n\n\nTipo.de.dados\nDescrição\n\n\n\nTexto\n\n\n\nTexto Breve\nValores curtos e alfanuméricos, tais como um apelido ou um endereço\n\n\nNúmero, Número Grande\nValores numéricos, como distâncias\n\n\nPercentagem\nPercentagens\n\n\nCientífico\nAceita numeração científica\n\n\nMoeda\nValores monetários\n\n\nSim/Não\nTambém conhecido como lógico ou booleano. Os valores Sim e Não e os campos que contêm apenas um de dois valores\n\n\nData/Hora\n\n\n\nData/Hora Prolongada\nData/Hora: valores de data e hora dos anos 100 a 9999.\n\n\nData/Hora Prolongada: valores de data e hora dos anos 1 a 9999\n\n\n\nRich Text\nTexto ou combinações de texto e números que podem ser formatados ao utilizar controlos de cor e de tipo de letra\n\n\nCampo Calculado\nResultados de um cálculo. O cálculo tem de fazer referência a outros campos da mesma tabela\n\n\nAnexo\nImagens, ficheiros de folha de cálculo, documentos, gráficos e outros tipos de ficheiros suportados anexados aos registos na base de dados, semelhante à forma de anexar ficheiros a mensagens de email\n\n\nHiperligação\nTexto ou combinações de texto e números armazenados como texto e utilizados como um endereço de hiperligação\n\n\nMemo\n\n\n\nTexto Longo\nLongos blocos de texto. Uma utilização típica de um campo Memo seria uma descrição detalhada do produto\n\n\nPesquisa\nLista de valores obtida de uma tabela ou consulta ou apresenta um conjunto de valores especificados na criação do campo.",
+    "crumbs": [
+      "Dados e Bases de Dados",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tipos de dados</span>"
+    ]
   }
 ]

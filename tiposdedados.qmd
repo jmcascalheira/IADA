@@ -1,1 +1,20 @@
 # Tipos de dados
+
+Todos os formatos de bases de dados permitem a definição de diversos tipos de dados. A seleção do tipo de dados deve ser realizada conforme a natureza da informação que se pretende armazenar nesse campo específico. Devemos optar pelos tipos de dados que melhor se adaptam à informação que pretendemos armazenar/guardar. O tipo de dados escolhido determina a natureza dos dados que podem ser armazenados, o intervalo de valores que podem assumir e as operações que podem ser efectuadas sobre os mesmos. Por vezes, confundem-se os tipos de dados que podem ser selecionados numa base de dados com os tipos de variáveis estatísticas. Embora relacionados, no caso das bases de dados, são tidas em consideração principalmente as operações de armazenamento e transformação, resultando numa maior variedade de tipos em comparação com as variáveis estatísticas. Na @tbl-dados, são apresentados os principais exemplos dos tipos de dados.
+
+
+```{r}
+#| echo: false
+#| output: false
+dados <- read.csv("tables/dados.csv")
+
+```
+
+```{r}
+#| label: tbl-dados
+#| echo: false
+#| tbl-cap: | 
+#|   Principais tipos de dados que definem os valores que uma coluna de uma base de dados pode conter.
+
+knitr::kable(dados)
+```
