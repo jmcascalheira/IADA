@@ -58,7 +58,7 @@ book:
     - referencias.qmd
     - anexos.qmd
 
-bibliography: biblio.bib
+bibliography: IADA.bib
 
 format:
   html:

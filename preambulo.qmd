@@ -16,7 +16,7 @@ Atualmente são abundantes as discussões e iniciativas acerca das promessas e d
 #| label: fig-pishaped
 #| echo: false
 #| fig-cap: | 
-#|   Perfis profissionais em forma de "T" vs forma de "∏". Adaptado de @marwick2016).
+#|   Perfis profissionais em forma de "T" vs forma de "∏". Adaptado de @marwick_2016.
 
 knitr::include_graphics("images/pishaped.png", dpi = 100)
 ```
