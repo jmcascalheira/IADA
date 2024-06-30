@@ -58,7 +58,7 @@ book:
     - referencias.qmd
     - anexos.qmd
 
-bibliography: references.bib
+bibliography: biblio.bib
 
 format:
   html:
