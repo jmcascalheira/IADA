@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.49">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="João Cascalheira">
-
-<title>1&nbsp; Tipos de bases de dados – Introdução à Análise de Dados em Arqueologia</title>
+<title>2&nbsp; Tipos de bases de dados – Introdução à Análise de Dados em Arqueologia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,8 +18,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
-
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -42,8 +58,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -70,33 +85,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basesdados.html">Dados e Bases de Dados</a></li><li class="breadcrumb-item"><a href="./basesdados.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basesdados.html">Dados e Bases de Dados</a></li><li class="breadcrumb-item"><a href="./basesdados.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Introdução à Análise de Dados em Arqueologia</a> 
         <div class="sidebar-tools-main">
@@ -111,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sobre este livro</span></a>
@@ -126,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><strong>Introdução</strong></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Introdução</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -137,21 +143,21 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./basesdados.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tiposdedados.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tipos de dados</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -160,21 +166,21 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./recolha.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./E5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Programa E5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programa E5</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -183,21 +189,21 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./formatar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Formatar, ordenar e filtrar</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Formatar, ordenar e filtrar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./operadores.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>Usar operadores e funções para transformação de dados</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Usar operadores e funções para transformação de dados</strong></span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
@@ -206,27 +212,27 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tiposvariaveis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Tipos de variáveis estatísticas</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>Tipos de variáveis estatísticas</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./qualitativas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Variáveis qualitativas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Variáveis qualitativas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./quantitativas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Variáveis quantitativas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Variáveis quantitativas</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -235,27 +241,27 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./duascategoricas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Duas variáveis categóricas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Duas variáveis categóricas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./umacatumanum.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Uma variável categórica e uma variável numérica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Uma variável categórica e uma variável numérica</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./duasnumericas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Duas variáveis numéricas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Duas variáveis numéricas</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./referencias.html" class="sidebar-item-text sidebar-link">
@@ -269,27 +275,23 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#folhas-de-cálculo" id="toc-folhas-de-cálculo" class="nav-link active" data-scroll-target="#folhas-de-cálculo"><span class="header-section-number">1.1</span> Folhas de cálculo</a></li>
-  <li><a href="#bases-de-dados-relacionais" id="toc-bases-de-dados-relacionais" class="nav-link" data-scroll-target="#bases-de-dados-relacionais"><span class="header-section-number">1.2</span> Bases de dados relacionais</a></li>
-  <li><a href="#bases-de-dados-espaciais" id="toc-bases-de-dados-espaciais" class="nav-link" data-scroll-target="#bases-de-dados-espaciais"><span class="header-section-number">1.3</span> Bases de dados espaciais</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jmcascalheira/IADA/edit/main/basesdados.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmcascalheira/IADA/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<li><a href="#folhas-de-c%C3%A1lculo" id="toc-folhas-de-cálculo" class="nav-link active" data-scroll-target="#folhas-de-c%C3%A1lculo"><span class="header-section-number">2.1</span> Folhas de cálculo</a></li>
+  <li><a href="#bases-de-dados-relacionais" id="toc-bases-de-dados-relacionais" class="nav-link" data-scroll-target="#bases-de-dados-relacionais"><span class="header-section-number">2.2</span> Bases de dados relacionais</a></li>
+  <li><a href="#bases-de-dados-espaciais" id="toc-bases-de-dados-espaciais" class="nav-link" data-scroll-target="#bases-de-dados-espaciais"><span class="header-section-number">2.3</span> Bases de dados espaciais</a></li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/jmcascalheira/IADA/edit/main/basesdados.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmcascalheira/IADA/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basesdados.html">Dados e Bases de Dados</a></li><li class="breadcrumb-item"><a href="./basesdados.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./basesdados.html">Dados e Bases de Dados</a></li><li class="breadcrumb-item"><a href="./basesdados.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span></a></li></ol></nav><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de bases de dados</span>
+</h1>
 </div>
 
 
@@ -303,23 +305,77 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><p>Uma base de dados é um repositório de informação relacionada com um determinado assunto ou finalidade, ou seja, é uma coleção de dados ou itens de informação estruturados de maneira específica, que permite a sua consulta, atualização e outros tipos de operações processadas por meios informáticos. Serve para gerir vastos conjuntos de informação de modo a facilitar a organização, manutenção e pesquisa de dados. Existem vários tipos de bases de dados digitais, incluindo bases de dados relacionais, NoSQL, orientadas a objetos, multimodais, espaciais, entre outras. Em Arqueologia, são utilizados, sobretudo, três tipos principais de bases de dados: <strong>folhas de cálculo</strong>, <strong>bases de dados relacionais</strong> e <strong>bases de dados espaciais</strong>.</p>
+<section id="folhas-de-cálculo" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="folhas-de-cálculo">
+<span class="header-section-number">2.1</span> Folhas de cálculo</h2>
+<p>Uma folha de cálculo é um tipo de ficheiro para armazenamento de dados, onde os dados são guardados numa estrutura semelhante a uma tabela. É, em certo sentido, muito semelhante ao sistema de quadrícula arqueológica usado para identificar unidades de escavação, com <strong>linhas</strong> horizontais (normalmente identificadas com números) e <strong>colunas</strong> verticais (normalmente identificadas com letras) <span class="citation" data-cites="mcpherron_2002">(<a href="referencias.html#ref-mcpherron_2002" role="doc-biblioref">McPherron and Dibble 2002</a>)</span>. A intersecção entre uma linha específica e uma coluna específica denomina-se <strong>célula</strong>. Numa folha de cálculo utilizada como base de dados, cada linha representa um registo, cada coluna representa um campo e cada célula contém os valores observados.</p>
+<p>Em Arqueologia, as folhas de cálculo são amplamente utilizadas para a recolha e análise de dados. A sua principal vantagem reside na simplicidade e na capacidade de serem lidas pela maioria dos programas mais utilizados para análises quantitativas de dados (como MS Excel, Google Sheets, SPSS, entre outros), sistemas de gestão de bases de dados (por exemplo, MS Access) e linguagens de programação (por exemplo, R, Python). Muitas ferramentas de transformação de dados e bibliotecas de programação oferecem suporte integrado para a leitura e escrita destes ficheiros, tornando-as uma escolha popular para a troca de dados em vários domínios <a href="#fig-excel" class="quarto-xref">Fig.&nbsp;<span>2.1</span></a>.</p>
+<p>Os formatos mais comuns e aconselháveis para este tipo de base de dados são os CSV (comma-separated values) e TXT (ficheiro de texto simples). Nos ficheiros CSV, os campos são sempre separados por vírgulas. Já nos ficheiros TXT, os campos podem ser separados por vírgula, ponto e vírgula ou por tabulação. Ao contrário de outros formatos, estes são completamente abertos do ponto de vista do licenciamento e, por essa razão, são facilmente partilhados entre utilizadores que usem diferentes programas ou sistemas operativos. Além disso, por não precisarem de um programa específico, podem ser abertos e modificados até com um simples editor de texto.</p>
+<p>Contudo, à medida que os requisitos de armazenamento de dados crescem em tamanho e complexidade, as folhas de cálculo podem tornar-se menos eficientes e escaláveis comparativamente às bases de dados relacionais, que oferecem capacidades mais avançadas de consulta, indexação e gestão de dados.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-excel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/excel.png" class="img-fluid figure-img" width="1409">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;2.1: Exemplo de folha de cálculo com dados provenientes da análise de ferramentas em pedra do sítio arqueológico de Vale Boi. Cada linha representa um artefacto, e cada coluna, uma das variáveis analisadas. Os dados presentes nas células representam os valores para cada uma das variáveis ou campos.
+</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="bases-de-dados-relacionais" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="bases-de-dados-relacionais">
+<span class="header-section-number">2.2</span> Bases de dados relacionais</h2>
+<p>As bases de dados relacionais são construídas com base nos princípios do modelo relacional, que define os dados como conjuntos de tabelas. De uma forma simplificada, uma base de dados relacional agrega várias folhas de cálculo ou ficheiros planos, que contêm informação distinta sobre o mesmo conjunto de dados.</p>
+<p>A estrutura de uma base de dados relacional baseia-se no conceito de <strong>chaves</strong> ou <strong>identificadores únicos</strong> (em inglês, Globally Unique Identifier, ou GUID), que desempenham um papel vital na manutenção da integridade dos dados e no estabelecimento de relações entre tabelas. A seleção de uma <strong>chave primária</strong> é essencial, pois influencia o desempenho e a eficiência das consultas e das junções na base de dados. Eis algumas das principais características das chaves primárias:</p>
+<ul>
+<li><p>Unicidade: Cada valor presente na coluna da chave primária deve ser único. Esta característica assegura que não existam dois registos na mesma tabela com o mesmo identificador.</p></li>
+<li><p>Não-nulidade: Uma chave primária não pode conter valores NULL (i.e., nulos). É imperativo que cada registo na tabela possua um valor de chave primária válido e não nulo.</p></li>
+<li><p>Imutabilidade: Idealmente, os valores atribuídos às chaves primárias não devem ser alterados após a sua atribuição a um&nbsp; registo. Isto garante a consistência e previne potenciais problemas na referência de dados.</p></li>
+<li><p>Coluna única ou chave composta: Uma chave primária pode ser composta por uma única coluna ou por uma combinação de múltiplas colunas. Neste último caso, é designada por chave composta.</p></li>
+</ul>
+<p>Um exemplo prático de uma base de dados relacional é a utilizada pelo software Newplot, um programa de código aberto (i.e., open source), desenvolvido para a gestão de dados provenientes de escavações arqueológicas. O Newplot funciona sobre uma base de dados relacional em MS Access, que compreende várias tabelas, sendo as mais significativas as tabelas Context e XYZ. A tabela Context armazena&nbsp; informação sobre determinados artefactos ou conjunto de artefactos e o contexto da sua descoberta (e.g., unidade estratigráfica, tipo de material). Por sua vez, a&nbsp; tabela XYZ regista informações espaciais relativas à proveniência desses artefactos, incluindo as coordenadas tridimensionais x, y e z. Ambas as tabelas estão interligadas&nbsp; por uma chave primária composta, representada pelas variáveis UNIT e ID, que correspondem, respetivamente, ao quadrado, área de escavação ou sítio arqueológico (e.g., A1, L15, Abrigo, Vale Boi), e a um número sequencial de identificação. A combinação UNIT e ID deve ser única em toda a base de dados. Por exemplo, em toda a base de dados, apenas um objeto pode ter como chave primária “A1-100”, permitindo correlacionar as suas coordenadas na tabela XYZ com a respetiva informação contextual na tabela Context. Em certos casos, torna-se necessário registar múltiplas coordenadas tridimensionais para um único objeto, com o objetivo de recolher dados relativos à sua orientação ou às suas dimensões&nbsp; e morfologia geral. No entanto, esta metodologia implica a criação de mais do que um registo na tabela XYZ para cada objeto. A base de dados do Newplot está preparada para aceitar várias entradas na tabela XYZ para um único objeto, mantendo o mesmo conjunto UNIT-ID, mas adicionando uma outra variável, denominada SUFFIX. Neste caso, a relação entre as tabelas Context e XYZ é caracterizada como um-para-múltiplos (1:M), em que várias entradas em XYZ correspondem a uma única entrada em Context.</p>
+</section><section id="bases-de-dados-espaciais" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="bases-de-dados-espaciais">
+<span class="header-section-number">2.3</span> Bases de dados espaciais</h2>
+<p>As bases de dados espaciais constituem um tipo especializado de bases de dados, concebidas para armazenar, gerir e processar dados espaciais ou geográficos. Desempenham um papel crucial em diversas aplicações que necessitam de&nbsp; informações baseadas na localização, como é o caso dos Sistemas de Informação Geográfica (SIG), a monitorização ambiental, o planeamento urbano, a logística, os serviços baseados na localização e, claro, em Arqueologia. Estas bases de dados estão equipadas com técnicas avançadas de indexação espacial e capacidades de consulta espacial, as quais permitem a recuperação e análise eficientes de dados espaciais. Facilitam a representação de objetos geométricos simples, tais como pontos, linhas e polígonos, e, em certos casos, são também capazes de lidar com estruturas mais complexas, como objetos tridimensionais e redes triangulares irregulares (conhecidas em inglês como Triangulated Irregular Network ou TIN).</p>
+<p>Quase a totalidade do trabalho de campo arqueológico produz grandes quantidades de informação baseada na localização, seja de sítios arqueológicos ou de objetos encontrados num determinado sítio arqueológico. A proveniência de cada artefacto e amostra é crucial para entender a sua idade, tafonomia, contexto ecológico, contexto cultural e significado comportamental. Assim, a proveniência espacial de um objeto é frequentemente tão importante quanto o próprio objeto. Esta realidade torna a utilização de bases de dados espaciais em Arqueologia particularmente vantajosa, especialmente quando os dados geográficos incluem&nbsp; coordenadas absolutas, referenciadas a um datum e a um sistema de projeção específicos.</p>
+<p>Um exemplo do uso de uma base de dados espacial para consulta online do inventário de sítios arqueológicos de Portugal Continental é o <a href="https://patrimoniodgpc.maps.arcgis.com/apps/webappviewer/index.html?id=5cb4735d7d7743a39a16d7269a753a4a">Geoportal da Direção Geral do Património Cultural</a> <a href="#fig-dgpc" class="quarto-xref">Fig.&nbsp;<span>2.2</span></a>. Esta base de dados utiliza o formato Geodatabase da ESRI, um formato proprietário usado pelo conjunto de software ArcGIS da ESRI. Este formato oferece um modelo de dados espaciais abrangente, que inclui diversos tipos de dados, como pontos, linhas, polígonos e dados raster.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-dgpc" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-dgpc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/dgpc.png" class="img-fluid figure-img" width="1452">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dgpc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;2.2: Geoportal da Direção Geral do Património Cultural (<a href="https://patrimoniodgpc.maps.arcgis.com">https://patrimoniodgpc.maps.arcgis.com</a>).
+</figcaption></figure>
+</div>
+</div>
+</div>
+<p>Outro exemplo disponível para consulta é o projeto PaleoCore <span class="citation" data-cites="reed_2015">(<a href="referencias.html#ref-reed_2015" role="doc-biblioref">Reed et al. 2015</a>)</span>, uma plataforma online dedicada à gestão de dados arqueológicos, paleontológicos e geológicos, com foco particular nos períodos Pliocénico e Pleistocénico <a href="#fig-paleocore" class="quarto-xref">Fig.&nbsp;<span>2.3</span></a>. A base de dados deste projeto é suportada por software de acesso aberto, incluindo a extensão PostGIS do popular sistema de gestão de bases de dados relacionais PostgreSQL. O PostGIS adiciona suporte para a gestão e análise de dados espaciais, convertendo o PostgreSQL num sistema de bases de dados espacial completo, que inclui tipos de dados espaciais específicos, índices espaciais e funções espaciais.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-paleocore" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-paleocore-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/paleocore.png" class="img-fluid figure-img" width="1438">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-paleocore-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;2.3: Plataforma Paleocore <a href="https://paleocore.org/">https://paleocore.org/</a>, dedicada à gestão de dados arqueológicos, paleontológicos e geológicos, com foco particular nos períodos Pliocénico e Pleistocénico.
+</figcaption></figure>
+</div>
+</div>
+</div>
 
 
-<section id="folhas-de-cálculo" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="folhas-de-cálculo"><span class="header-section-number">1.1</span> Folhas de cálculo</h2>
-</section>
-<section id="bases-de-dados-relacionais" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="bases-de-dados-relacionais"><span class="header-section-number">1.2</span> Bases de dados relacionais</h2>
-</section>
-<section id="bases-de-dados-espaciais" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="bases-de-dados-espaciais"><span class="header-section-number">1.3</span> Bases de dados espaciais</h2>
-
-
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-mcpherron_2002" class="csl-entry" role="listitem">
+McPherron, Shannon P., and Harold L. Dibble. 2002. <em>Using Computers in Archaeology: A Practical Guide</em>. McGraw-Hill.
+</div>
+<div id="ref-reed_2015" class="csl-entry" role="listitem">
+Reed, Denné, W. Andrew Barr, Shannon P. Mcpherron, René Bobe, Denis Geraads, Jonathan G. Wynn, and Zeresenay Alemseged. 2015. <span>“Digital Data Collection in Paleoanthropology.”</span> <em>Evolutionary Anthropology: Issues, News, and Reviews</em> 24 (6): 238–49. <a href="https://doi.org/10.1002/evan.21466">https://doi.org/10.1002/evan.21466</a>.
+</div>
+</div>
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -738,22 +794,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./introducao.html" class="pagination-link" aria-label="**Introdução**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><strong>Introdução</strong></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Introdução</strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./tiposdedados.html" class="pagination-link" aria-label="Tipos de dados">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Tipos de dados</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tipos de dados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>Introdução à Análise de Dados em Arqueologia foi escrito por João Cascalheira.</p>
 </div>   
@@ -765,8 +818,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-
-
 
 
 </body></html>
